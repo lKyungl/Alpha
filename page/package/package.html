@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Lampor</title>
+	<link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+	<link rel="stylesheet" href="../../library/swiper-bundle/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../css/base.css"/>
+	<link rel="stylesheet" href="../../css/index.css" />
+	<link rel="stylesheet" href="../../css/component/header/header-1.css" />
+	<link rel="stylesheet" href="../../css/component/footer/footer-1.css" />
+	<link rel="stylesheet" href="../../css/component/box-suite/room-box.css" />
+
+	<link rel="stylesheet" href="../../css/btn.css"/>
+	<link rel="stylesheet" href="package.css" />
+</head>
+<body>
+	<!-- Header -->
+	<header class="pc" id="navbar">
+		<div class="container-xl custom">
+			<div class="row no-gutters">
+				<div class="col-lg-3 col-6">
+					<div class="logo">
+						<a href="../home/home.html" id="logo">
+							<img src="../../asset/images/header/logo_lampor_1.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="menu-right col-lg-6">
+					<ul class="list">
+							<li class="item" id="menu-item"><a href="../home/home.html"><span>Overview</span></a></li>
+							<li class="item" id="menu-item"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+							<li class="item" id="menu-item"><a href="../amenities/amenities.html">Services & Amenities</a></li>
+							<li class="item active" id="menu-item"><a href="../offer/offer.html">Offers</a></li>
+					</ul>
+				</div>	
+				<div class="menu-left col-lg-3 col-6">
+					<div class="action-wrapper">
+							<div class="icon place">
+								<a href="../location/location.html"><img src="../../asset/images/_others/location-d.png" alt=""></a>
+							</div>
+							<div class="line-between"></div>
+							<div class="icon account">
+								<a href="../login/login_1.html"><img src="../../asset/images/_others/account-d.png" alt=""></a>
+							</div>
+							<div class="btn-1 btn-g">
+								<a href="../booking/booking_1.html"><button>Booking</button></a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="mobile">
+		<div class="container-xl">
+			<div class="wrapbar">
+				<div class="wrapcol1">
+					<div class="menuHamburger" onclick="openNav()">
+						<div class="bar-1"></div>
+						<div class="bar-2"></div>
+						<div class="bar-3"></div>
+					</div>
+				</div>
+				<div class="wrapcol2">
+					<div class="logo">
+						<a href="../home/home.html"><img src="../../asset/images/header/logo_lp.png" alt=""></a>
+					</div>
+				</div>
+				<div class="wrapcol3">
+					<div class="btn-wrap">
+						<a href="../booking/booking.html"><button>Booking</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<nav id="myNav" class="overlay">
+			<div class="close-btn">
+				 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			</div>
+			<div class="overlay-content">
+				<ul class="list">
+					<li class="item"><a href="../home/home.html">Overview</a></li>
+					<li class="item"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+					<li class="item"><a href="../amenities/amenities.html">Services & Amenities</a></li>
+					<li class="item active"><a href="../offer/offer.html">Offers</a></li>
+					<li class="item"><a href="../location/location.html">Location</a></li>
+					<li class="item"><a href="../account/account.html">My Account</a></li>
+				</ul>
+				<ul class="signin-up">
+					<li class="item signin"><a href="../login/login_1.html">Sign in</a></li>
+					<li class="line"></li>
+					<li class="item signup"><a href="../register/register_1.html">Register</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- End Header -->
+
+	<!-- package hero -->
+	<section class="package-hero">
+		<div class="container-xl">
+			<div class="overline-top">
+				<div class="itemL">	
+					<a href="../offer/offer.html" class="backtoPrev" id="backtoPrev">
+							<img src="../../asset/images/_others/arrow-left-b.png" alt=""> 
+							<div class="rl-heading6">OFFERS</div>
+					</a> 
+				</div>
+				<div class="itemR">
+					<div class="rl-heading6">/</div>
+					<div class="rl-sub1">Stay safe and relax package</div>
+				</div>
+			</div>
+			<div class="banner1">
+				<div class="sub-heading rl-body2">VALUE PACKAGE</div>
+				<div class="heading-title pd-heading4">Stay safe and relax</div>
+				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+					<img class="banner__pc" src="../../asset/images/package/banner.jpg" alt="">
+					<img class="banner__tab" src="../../asset/images/package/banner-tab.jpg">
+					<img class="banner__mobile" src="../../asset/images/package/banner-mobi.png" alt="">
+				</div>
+				<div class="text-subtitle col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+					<div class="rl-body1">
+						With bounty of space to wrap up the day’s work and loosen up the living room’s chaise longue, these suites will make any business voyager feel right at home.
+					</div>
+				</div>
+				<div class="line-1"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end package hero -->
+
+	<!-- details -->
+	<section class="details">
+		<div class="container-xl">
+			<div class="detail-item">
+				<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+					<div class="item-title rl-sub1">OFFER VALID FOR: MAY 16 2021 – DEC 31 2021</div>
+				</div>
+			</div>
+			<div class="detail-item">
+				<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+					<div class="item-title rl-sub1">CONDITIONS</div>
+					<div class="item-body">
+						<div class="item-bodyL">
+							<ul>
+								<li class="list-text rl-body1">Offer is available Sunday to Thursday nights only.</li>
+							</ul>
+						</div>
+						<div class="item-bodyR">
+							<ul>
+								<li class="list-text rl-body1">Minium stay: 2 nights</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="detail-item">
+				<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+					<div class="item-title rl-sub1">INCLUDE</div>
+					<div class="item-body">
+						<div class="item-bodyL">
+							<ul>
+								<li class="list-text rl-body1">20% off our Room Rate</li>
+								<li class="list-text rl-body1">Daily breakfast for up to two at Palm Court Restaurent</li>
+								<li class="list-text rl-body1">Personalized welcome amenity</li>
+								<li class="list-text rl-body1">Self parking for one vehicle</li>
+							</ul>
+						</div>
+						<div class="item-bodyR">
+							<ul>
+								<li class="list-text rl-body1">Early check-in from 12:00 noon</li>
+								<li class="list-text rl-body1">Late check-out until 2:00 pm</li>
+								<li class="list-text rl-body1">With stays in a Club Premier Suite: Club benefits for up to two guests</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end details -->
+
+	<!-- list room -->
+	<section class="list-room">
+		<div class="container-xl">
+			<div class="content-top">
+				<div class="line-2"></div>
+				<div class="feature-heading">
+					<div class="rl-heading4">Available for</div>
+				</div>
+			</div>
+			<div class="slide">
+					<div class="room-box swiper-container">
+						<!-- Swiper -->
+					      <div class="swiper-wrapper">
+					        <div class="room-card swiper-slide">
+					        	<img src="../../asset/images/box-room/room1.png" alt="">
+								<div class="bg-overlay">
+						        </div>
+					        	<div class="room-data">
+					        		<h4 class="room-title">Executive Suite</h4>
+					        		<sub class="room-sub">These suites will make any trade voyager feel right at home</sub>
+					        		<div class="btn-room">
+					        			<a href="../room/room.html"><button class="btn-3-wh-b">View Details</button></a>
+					        			<a href="../booking/booking.html"><button class="btn-3-wh-f">Book Now</button></a>
+					        		</div>
+					        	</div>
+					        </div>
+					        <div class="room-card swiper-slide">
+					        	<img src="../../asset/images/box-room/room2.png" alt="">
+								<div class="bg-overlay">
+						        </div>
+					        	<div class="room-data">
+					        		<h4 class="room-title">Deluxe Suite</h4>
+					        		<sub class="room-sub">Wall-to-wall windows let you appreciate the bustling city outside</sub>
+					        		<div class="btn-room">
+					        			<a href="../room/room.html"><button class="btn-3-wh-b">View Details</button></a>
+					        			<a href="../booking/booking.html"><button class="btn-3-wh-f">Book Now</button></a>
+					        		</div>
+					        	</div>
+					        </div>
+					        <div class="room-card swiper-slide">
+					        	<img src="../../asset/images/box-room/room3.png" alt="">
+								<div class="bg-overlay">
+						        </div>
+					        	<div class="room-data">
+					        		<h4 class="room-title">One-Bedroom Suite</h4>
+					        		<sub class="room-sub">You'll observe the city light up at night from the living room’s picture window</sub>
+					        		<div class="btn-room">
+					        			<a href="../room/room.html"><button class="btn-3-wh-b">View Details</button></a>
+					        			<a href="../booking/booking.html"><button class="btn-3-wh-f">Book Now</button></a>
+					        		</div>
+					        	</div>
+					        </div>
+					    </div>
+					    <div class="swiper-pagination"></div>		
+					</div>
+				</div>
+		</div>
+	</section>
+	<!-- end list room -->
+
+	
+	<!-- contact box -->
+	<section class="contact-box">
+		<div class="container-xl">
+			<div class="col-lg-10 offset-lg-1 col-md-12 offset-md-0">
+				<div class="contact-us">
+					<div class="cover-box row">
+						<div class="contentL col-lg-5 col-md-5">
+							<div class="sub-text">
+								<div class="rl-sub1">Book in advance to get great deals</div>
+							</div>
+						</div>
+						<div class="contentR col-lg-7 col-md-7">
+							<div class="phone-number">+65 21 87600000</div>
+							<div class="btn-contact">
+								<a href="../contact/contact.html"><button class="btn-3-or-f">CONTACT US</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contact box -->
+
+
+	<!-- footer above -->
+	<section class="footer-above">
+		<div class="container-xl">
+			<div class="note-x">
+				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+					<div class="note-sub rl-sub2">PLEASE NOTE*</div> 
+					<div class="note-text rl-body2">All offers are subject to availability at the time of reservation. Offers are not substantial in conjunction with any other offer or contract and don't apply to groups. Rates are per room, per night, change by entry date and/or length of stay, and don't incorporate pertinent required property fees (for case resort expenses or benefit charges), tips, or government forced charges, benefit charges, demands or extra charges, unless something else noted. Early departure fees may apply. Rates are subject to change.</div>
+				</div>
+			</div>
+			<div class="bottom-navBar">
+				<div class="col-lg-4 offset-lg-4">
+					<div class="bottom-block">
+						<div class="arrowL"><a href="../package/package.html"><img src="../../asset/images/_others/arrow-left-d.png" alt=""></a></div>
+						<div class="text-overline rl-sub1">VIEW OTHER OFFER</div>
+						<div class="arrowL"><a href="../package/package.html"><img src="../../asset/images/_others/arrow-right-d.png" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- end footer above -->
+	
+
+	<!-- footer -->
+	<footer>
+		<div class="upper">
+			<div class="container-xl">
+				<div class="row">
+					<div class="col-xl-3 offset-lg-1">
+						<div class="logo">
+							<img src="../../asset/images/footer/logo-img.png" alt="">
+						</div>
+					</div>
+					<div class="logo_mobile">
+						<img src="../../asset/images/footer/logo-img.png" alt="">
+					</div>
+					<div class="col-xl-8">
+						<div class="row hidden-in-mobile">
+							<div class="col-3">
+								<div class="menu-infomations">
+									<div class="title-info">
+										INFORMATIONS
+									</div>
+									<div class="body-info">
+										<ul class="infoMenu">
+											<li class="list-info"><a href="../about/about.html">About Us</a></li>
+											<li class="list-info"><a href="../contact/contact.html">Contact Us</a></li>
+											<li class="list-info"><a href="../location/location.html">Location</a></li>
+											<li class="list-info"><a href="../offer/offer.html">Offers</a></li>
+											<li class="list-info"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+											<li class="list-info"><a href="../amenities/amenities.html">Service & Amenites</a></li>
+											<li class="list-info"><a href="../gallery/gallery.html">Gallery</a></li>
+											<li class="list-info"><a href="../term">Terms & Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="get-intouch">
+									<div class="title-info">GET IN TOUCH</div>
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard<br> 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com<br>
+										+65 21 87600000</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="subscribe">
+									<div class="text-content">
+										<p>Get the latest news and great deals in your inbox</p>
+								</div>
+								<div class="input-wrap">
+									<div class="input-box">
+										<input type="email" class="input-email" id="input-email" placeholder="Type your email">
+									</div>
+									<div class="input-btn">
+											<button type="button"onclick="document.getElementById('id02').style.display='block'">Subscribe</button>
+										</div>
+								</div>
+								<div class="download-app">
+									<a href=""><div class="dl-btn on-ios">
+										<img src="../../asset/images/footer/app-store.png" alt="">
+									</div></a>
+									<a href=""><div class="dl-btn on-android">
+										<img src="../../asset/images/footer/google.png" alt="">
+									</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="get-intouch__mobile">
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard, 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com 
+										<br>
+									+65 21 87600000</p>
+									</div>
+								</div>
+					<div class="title-info__mobile">INFORMATIONS</div>
+						<ul class="list-item__mobile">
+	                        <li><a href="../about/about.html">About Us</a></li>
+	                        <li><a href="../contact/contact.html">Contact Us</a></li>
+	                        <li><a href="../location/location.html">Location</a></li>
+	                        <li><a href="../offer/offer.html">Offers</a></li>
+	                        <li><a href="../accommodations/accommodations.html">Accommodations
+							</a></li>
+							<li><a href="../amenities/amenities.html">Service & Amenites
+							</a></li>
+							<li><a href="../gallery/gallery.html">Gallery
+							</a></li>
+							<li><a href="../term/term.html">Terms & Conditions
+							</a></li>
+				    	</ul>
+				</div>
+			</div>
+		</div>
+			<div class="social-network">
+		        <div class="social-icon hidden-in-mobile">
+		            <ul class="list-icon">
+		            	<li><a href="https://facebook.com" target="_blank"><img src="../../asset/images/footer/fb.png" alt=""></a></li>
+		            	<li><a href="https://twitter.com" target="_blank"><img src="../../asset/images/footer/tw.png" alt=""></a></li>
+		            	<li><a href="https://instargram.com" target="_blank"><img src="../../asset/images/footer/ins.png" alt=""></a></li>
+		            	<li><a href="https://youtube.com" target="_blank"><img src="../../asset/images/footer/yt.png" alt=""></a></li>
+		            </ul>
+	            </div>
+			</div>
+			<div class="container-xl">
+        		<div class="divider"></div>
+    		</div>
+		    <div class="lower">
+		        <div class="container-xl">
+                    <div class="copyright">
+                        <p>	                            
+                        	© Lampor Hotel & Residence, Inc. 2021. All Rights Reserved.
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- The Modal -->
+	<div id="id02" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialo modal-dialog-centered">
+			<form class="modal-content animate" action="/action_page.php">
+				<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<div class="popup-result">
+				<div class="img-result"><img src="../../asset/Icon_logo/stick.png" alt="">
+				</div>
+				<div class="result-sub"><div class="rl-heading6">Subscribe successfully!</div></div>
+				<div class="result-text"><div class="rl-body3">You will receive useful information from us.</div></div>
+			</div>
+			<div class="btn-done"><button type="button" onclick="document.getElementById('id02').style.display='none'" class="btn-2-gr-f">Done</button></div>
+			</form>
+		</div>
+	</div>
+	<!-- end modal -->
+
+	<!-- swiper slider -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="jquery.scrollify.js"></script>
+	<script src="../../library/swiper-bundle/swiper-bundle.min.js"></script>\
+
+
+	<!-- swiper slider -->
+	<script src="../../library/swiper-bundle/swiper-bundle.min.js"></script>
+	<script>
+      var swiper = new Swiper(".room-box", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        spaceBetween: 48,
+        coverflowEffect: {
+          rotate: 0,
+        },
+         pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+        breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 48
+        },
+        // when window width is >= 480px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 48
+        },
+        // when window width is >= 640px
+        1600: {
+          slidesPerView: 3,
+          spaceBetween: 48,
+        }
+       }
+
+      });
+    </script>
+
+	<!-- Scroll menu -->
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0.10)";
+		  } else {
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0)";
+		  }
+		}
+	</script>
+	<script>
+		/* Open */
+		function openNav() {
+		  document.getElementById("myNav").style.height = "100%";
+		}
+
+		/* Close */
+		function closeNav() {
+		  document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
+	<!-- modal sub -->
+	<script>
+	// Get the modal
+	var modalSub = document.getElementById('id02');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modalSub) {
+	    modalSub.style.display = "none";
+	  }
+	}
+	</script>
+	<!-- overline js -->
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script>
+		$( ".backtoPrev" ) .hover(function() {
+		      $( this )
+		        .toggleClass( "backtoPrev-active" )
+		        .next()
+		          .stop( true, true )
+		          .slideToggle();
+		    });
+	</script>
+
+
+</body>
+</html>

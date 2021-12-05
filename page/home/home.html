@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Lampor</title>
+	 <link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+	<link rel="stylesheet" href="../../library/swiper-bundle/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../css/base.css"/>
+	<link rel="stylesheet" href="../../css/index.css" />
+	<link rel="stylesheet" href="../../css/page/home/index.css"/>
+	<link rel="stylesheet" href="../../css/component/form/date-picker.css" />
+	<link rel="stylesheet" href="../../css/component/box-suite/room-box.css" />
+	<link rel="stylesheet" href="../../css/component/footer/footer-1.css" />
+	<link rel="stylesheet" href="home.css"/>
+	
+</head>
+<body>
+	<!-- Header -->
+	<header class="pc home-page" id="navbar">
+		<div class="container-xl custom">
+			<div class="row no-gutters">
+				<div class="col-lg-3 col-6">
+					<div class="logo">
+						<a href="#" id="logo">
+							<img src="../../asset/images/header/logo_lampor_2.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="menu-right col-lg-6">
+					<ul class="list">
+							<li class="item active" id="menu-item"><a href="#"><span>Overview</span></a></li>
+							<li class="item" id="menu-item"><a href="#">Accommodations</a></li>
+							<li class="item" id="menu-item"><a href="#">Services & Amenities</a></li>
+							<li class="item" id="menu-item"><a href="#">Offers</a></li>
+					</ul>
+				</div>	
+				<div class="menu-left col-lg-3 col-6">
+					<div class="action-wrapper">
+							<div class="icon place">
+								<a href="#"><img src="../../asset/images/_others/location-d.png" alt=""></a>
+							</div>
+							<div class="line-between"></div>
+							<div class="icon account">
+								<a href="#"><img src="../../asset/images/_others/account-d.png" alt=""></a>
+							</div>
+							<div class="btn-1 btn-g">
+								<a href="#"><button>Booking</button></a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="mobile">
+		<div class="container-xl">
+			<div class="row">
+				<div class="col-6">
+					<div class="logo">
+						Logo
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="btn-wrap">
+						<a href="#">Booking</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<div class="close-btn">
+				X
+			</div>
+			<ul class="list">
+				<li class="item active"><a href="#">Overview</a></li>
+				<li class="item"><a href="#">Accommodations</a></li>
+				<li class="item"><a href="#">Services & Amenities</a></li>
+				<li class="item"><a href="#">Offers</a></li>
+				<li class="item"><a href="#">Location</a></li>
+				<li class="item"><a href="#">My Account</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- The social media icon bar -->
+	<div class="icon-bar" >
+	<div class="icon-bar-left" id="icon-bar-left">
+		<div class="icon-item-left">
+	  		<a href="#" class="facebook">FB</a>
+			<a href="#" class="twitter">TW</a>
+			<a href="#" class="instargram">IN</a>
+			<a href="#" class="youtube">YT</a>
+		</div>
+	</div>
+	<div class="icon-bar-right" id="icon-bar-right">
+		<div class="icon-item-right">
+	  		<a href="#" class="phone">Call</a>
+			<a href="#" class="chat">Chat</a>
+		</div>
+	</div>
+	</div>
+	<!-- Home hero -->
+	<div class="section-hero">
+	<section class="home-hero panel" id="home-hero" data-section-name="home" style="height: 100vh;">
+		<div class="overlay">
+			<div class="heading-text">
+				<h4 class="rl-heading4">Put your time to</h4>
+				<h1 class="rl-heading1">Truly connect</h1>
+				<div class="quote">
+					<div class="line"></div>
+					<h3 class="mr-quote">feel right at home</h3>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="form-wrapper">
+				<div class="form-inner row">
+					<div class="col-9 row">
+					<div class="col">
+						<div class="input-wrap input-date">
+							<label for="checkin">Check in</label>
+							<input type="text" id="checkin" placeholder="Dec 02rd 2021" />
+						</div>
+					</div>
+					<div class="col">
+						<div class="input-wrap input-date">
+							<label for="checkout">Check out</label>
+							<input type="text" id="checkout" placeholder="Dec 03th 2021" />
+						</div>
+					</div>
+					<div class="col">
+						<div class="input-wrap input-room">
+							<label for="room">Rooms</label>
+							<input type="number" id="quantity-room" name="quantity" min="1" placeholder="1">
+						</div>
+					</div>
+					<div class="col">
+						<div class="input-wrap input-room">
+							<label for="guest">Guests</label>
+							<input type="number" id="quantity-guest" name="quantity" min="1" placeholder="2">
+						</div>
+					</div>
+					</div>
+					<div class="col-3">
+          				<div class="form-btn">
+            				<a href="#">
+            					<button>Search for room</button>
+            				</a>
+          				</div>
+        			</div>
+				</div>
+			</div>
+			<div class= "btn-discover scroll" id="btn-discover"><a href="#introduction">Discover</a></div>	
+		</div>
+		
+      		<button>
+      			<div class="btn-search__mobile">
+        		<span class='btn-label'>Search for room</span>
+        		</div>
+      		</button>
+    	
+	</section>
+	</div>
+	<!-- End home hero -->
+	
+	<!-- Scroll js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="jquery.scrollify.js"></script>
+	<!-- <script>
+		$(function() {
+  			$(".panel").css({"height":$(window).height()});
+ 			$.scrollify({
+    			section:".panel"
+  			});
+	 		$(".scroll").click(function (e) {
+	        e.preventDefault();
+	    	$.scrollify.move($(this).attr("href"));
+	  			});
+		});
+	</script> -->
+	<!-- End scroll.js -->
+
+	<!-- Introduction -->
+	<section class="panel introduction" id="introduction" data-section-name="introduction">
+		<div class="bg">
+			<div class="background-img">
+				<div class="background-imgL">
+					<img class="bgL" src="../../asset/images/home/bgL.png" alt="">
+				</div>
+				<div class="background-imgR">
+					<img class="bgR" src="../../asset/images/home/bgR.png" alt="">
+				</div>
+			</div>
+			<div class="container-xl">
+				<div class="row">
+					<div class="col-lg-8 offset-lg-2">
+						<div class="content-intro">
+							<p class="text-title">HOTEL LAMPOR</p>
+							<p class="text-address">121 Orchard Boulevard, 248646 Singapore</p>
+							<p class="text-introduct">
+								 An ideal destination for both business and leisure travelers, we put you right in the heart of prime dining, shopping and loration. Stop in for breakfast beneath a custom Lasvit chandelier, or take in the city at your own pace – starting with views from the wall-to-wall windows in your suite.
+							</p>
+							<a href="#room-suite" class="arrow icon-more" id="show-me-more-btn"><img src="../../asset/images/_others/arrow-down-d.png" alt=""></a>
+							<p class="show">
+              					<button class="show-text">MAKE A BOOKING</button>
+				            </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Introduction -->
+
+	<!-- Room & Suite -->
+	<section class="room-suite" id="show-me-more"data-section-name="room-suite">
+		<div class="container-xl">
+			<div class="row">
+				<div class="title-room">
+					Accommodations
+				</div>
+				<div class="slide">
+					<div class="room-box swiper-container">
+						<!-- Swiper -->
+					      <div class="swiper-wrapper">
+					        <div class="room-card swiper-slide">
+					        	<img src="../../asset/images/box-room/room1.png" alt="">
+								<div class="bg-overlay">
+						        </div>
+					        	<div class="room-data">
+					        		<h4 class="room-title">Executive Suite</h4>
+					        		<sub class="room-sub">These suites will make any trade voyager feel right at home</sub>
+					        		<div class="btn-room">
+					        			<a href="#"><button>View Details</button></a>
+					        		</div>
+					        	</div>
+					        </div>
+					        <div class="room-card swiper-slide">
+					        	<img src="../../asset/images/box-room/room2.png" alt="">
+								<div class="bg-overlay">
+						        </div>
+					        	<div class="room-data">
+					        		<h4 class="room-title">Deluxe Suite</h4>
+					        		<sub class="room-sub">Wall-to-wall windows let you appreciate the bustling city outside</sub>
+					        		<div class="btn-room">
+					        			<a href="#"><button>View Details</button></a>
+					        		</div>
+					        	</div>
+					        </div>
+					        <div class="room-card swiper-slide">
+					        	<img src="../../asset/images/box-room/room3.png" alt="">
+								<div class="bg-overlay">
+						        </div>
+					        	<div class="room-data">
+					        		<h4 class="room-title">One-Bedroom Suite</h4>
+					        		<sub class="room-sub">You'll observe the city light up at night from the living room’s picture window</sub>
+					        		<div class="btn-room">
+					        			<a href="#"><button>View Details</button></a>
+					        		</div>
+					        	</div>
+					        </div>
+					        <div class="room-card swiper-slide">
+					        	<img src="../../asset/images/box-room/room4.png" alt="">
+								<div class="bg-overlay">
+						        </div>
+					        	<div class="room-data">
+					        		<h4 class="room-title">Royal Suite</h4>
+					        		<sub class="room-sub">Immortal décor emphasized make suite an executive’s sanctuary</sub>
+					        		<div class="btn-room">
+					        			<a href="#"><button>View Details</button></a>
+					        		</div>
+					        	</div>
+					        </div>
+					        <div class="room-card swiper-slide">
+								<img src="../../asset/images/box-room/room5.jpg" alt="">
+								<div class="bg-overlay">
+						        </div>
+					        	<div class="room-data">
+					        		<h4 class="room-title">Ambassador Suite</h4>
+					        		<sub class="room-sub">This suite is idealize for those searching for a put to engage.</sub>
+					        		<div class="btn-room">
+					        			<a href="#"><button>View Details</button></a>
+					        		</div>
+					        	</div>
+					        </div>
+					        <div class="room-card swiper-slide">
+					        	<img src="../../asset/images/box-room/room6.jpg" alt="">
+								<div class="bg-overlay">
+						        </div>
+					        	<div class="room-data">
+					        		<h4 class="room-title">Presidential Suite</h4>
+					        		<sub class="room-sub">Bespoke, neoclassical-inspired pied-à-terre, bask in the security and comfort</sub>
+					        		<div class="btn-room">
+					        			<a href="#"><button>View Details</button></a>
+					        		</div>
+					        	</div>
+					        </div>
+					    </div>
+					    <div class="swiper-pagination"></div>		
+					</div>
+				</div>
+				<div class="btn-all-accommodation"><a href="#"><button><div class="text-btn">all accommodations</div></button></a></div>
+			</div>
+		</div>
+	</section>
+	<!-- End Room & Suite -->
+
+	<!-- Services -->
+	<section class="service-amentities">
+		<div class="services">
+			<div class="container-xl">
+				<div class="title-service">
+					<p>Services & Amenities</p>
+					<div class="line-bottom"></div>
+				</div>
+				<div class="row three-star">
+						<div class="col-lg-4 offset-lg-1 luxury-left">
+							<div class="text-luxury">
+	              				<p class="title-star">3 star luxury</p>
+	      		       			<p class="text-star">
+	                			Set in the heart of Singapore Hotel Lampor perfectly echoes this quarter’s 21th-century Baroque grandeur, while augmenting it with a contemporary twist.
+	                			</p>
+	                			<a href=""><button><div class="btn-explore">explore the property</div></button></a>
+	            			</div>
+						</div>
+						<div class="col-lg-5 offset-lg-1 luxury-right">
+							<div class="luxury-img">
+								<img src="../../asset/images/home/amenites3.jpg" alt="">
+							</div>
+						</div>				
+				</div>
+			</div>
+		</div>
+		<div class="all-amenities">
+			<div class="container-xl">
+				<div class="line-bg">
+					<div class="row">
+						<div class="col-lg-3 amenities-card">
+							<div class="card-item" id="card-item">
+								<a href="#">
+									<img class="card-x" src="../../asset/images/home/amenities_hotel1.jpg" alt="">
+									<div class="overlay-img"></div>
+									<div class="subtitle">
+		                  				<p>Hotel Amenities</p> 
+		                  			<div class="arrow-1"><img src="../../asset/Icon_logo/see-more.png" alt="">
+		                  			</div>
+		                  			</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 amenities-card">
+							<div class="card-item" id="card-item">
+								<a href="#">
+									<img class="card-x" src="../../asset/images/home/restaurant1.jpg" alt="">
+									<div class="overlay-img"></div>
+									<div class="subtitle">
+		                  				<p>F&B Services</p> 
+		                  			<div class="arrow-1"><img src="../../asset/Icon_logo/see-more.png" alt="">
+		                  			</div>
+		                  			</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 amenities-card">
+							<div class="card-item" id="card-item">
+								<a href="#">
+									<img class="card-x" src="../../asset/images/home/wedding.jpg" alt="">
+									<div class="overlay-img"></div>
+									<div class="subtitle">
+		                  				<p>Meeting & Event</p> 
+		                  			<div class="arrow-1"><img src="../../asset/Icon_logo/see-more.png" alt="">
+		                  			</div>
+		                  			</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 amenities-card">
+							<div class="card-item" id="card-item">
+								<a href="#">
+									<img class="card-x" src="../../asset/images/home/spa.jpg" alt="">
+									<div class="overlay-img"></div>
+									<div class="subtitle">
+		                  				<p>Spa & Wellness</p> 
+		                  			<div class="arrow-1"><img src="../../asset/Icon_logo/see-more.png" alt="">
+		                  			</div>
+		                  			</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="interior-design">
+			<div class="bg-interiors">
+				<div class="col-lg-12">
+					<div class="bg-interiorsL">
+						<img src="../../asset/images/home/interior.png" alt="">
+					</div>
+					<div class="bg-interiorsR">
+						<img src="../../asset/images/home/design.png" alt="">
+					</div>
+				</div>					
+			</div>
+			<div class="interior-desc">
+				<div class="container-xl">
+					<div class="row interior-top">
+						<div class="col-lg-5 offset-lg-1 luxury-right">
+							<div class="interior-img">
+								<img src="../../asset/images/home/presidential1.jpg" alt="">
+							</div>
+						</div>	
+						<div class="col-lg-4 offset-lg-1 luxury-left">
+							<div class="text-luxury">
+			          			<p class="interior">MODERN LUXURY</p>
+			   	       			<p class="text-star">
+			               			Interiors have been wrapped up with modern materials, a shocking unbiased color plot, and wonderfully handcrafted furniture. The enriching embellishments have been curated from around the world, and the smart lighting upgrades the rich ambiance. 
+		              			</p>
+		           			</div>
+						</div>
+					</div>
+					<div class="row interior-bottom">
+						<div class="col-lg-4 offset-lg-3">
+							<div class="interior-imgLeft">
+								<img src="../../asset/images/home/presidential3.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-3 offset-lg-1">
+							<div class="interior-imgRight">
+								<img src="../../asset/images/home/presidential2.jpg" alt="">
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- End Services -->
+
+	<!-- experience -->
+	<section class="experience">
+		<div class="container-xl">
+			<div class="experience-content">
+				<div class="experience-heading">
+					<h3>EXPERIENCE</h3>
+				</div>
+				<div class="experience-subtitle">
+					<h5>from our guest adventures</h5>
+				</div>
+			</div>
+			<div class="experience-photo__PC">
+				<div class="experience-photoTop">
+					<div class="row">
+						<div class="col-lg-2 offset-lg-1">
+							<div class="guest-photo">
+								<img src="../../asset/images/home/guest-photo1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="guest-photo">
+								<img src="../../asset/images/home/guest-photo2.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="guest-photo">
+								<img src="../../asset/images/home/guest-photo1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="guest-photo">
+								<img src="../../asset/images/home/guest-photo2.jpg" alt="">
+							</div>
+						</div>				
+					</div>
+				</div>
+				<div class="experience-text">
+					<p>Enjoy your trips with great service and take your time to truly connect...</p>
+				</div>
+				<div class="experience-photoBottom">
+					<div class="row">
+						<div class="col-lg-3 offset-lg-2">
+							<div class="guest-photo">
+								<img src="../../asset/images/home/guest-photo2.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="guest-photo">
+								<img src="../../asset/images/home/guest-photo1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="guest-photo">
+								<img src="../../asset/images/home/guest-photo2.jpg" alt="">
+							</div>
+						</div>	
+					</div>					
+				</div>
+			</div>
+			<div class="experience-photo__mobile">
+				<div class="experience-photoTop">
+					
+				</div>
+				<div class="experience-text">
+					<p>Enjoy your trips with great service and take your time to truly connect...</p>
+				</div>
+				<div class="experience-photoBottom">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end experience -->
+
+	<!-- Offers -->
+	<section class="offers">
+		<div class="container-xl">
+			<div class="offers-content">
+				<div class="line line-left"></div>
+				<div class="offers-heading">
+					<h3>FEATURED OFFER</h3>
+				</div>
+				<div class="line line-right"></div>
+			</div>
+			<div class="offer-container">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="offers-slideBox swiper-container">
+						<div class="swiper-wrapper">
+							<!-- offer 1 -->
+							<div class="offer-box swiper-slide">
+								<div class="offer-boxL">
+									<div class="offer-img">
+										<img src="../../asset/images/home/onebed1.jpg" alt="">
+									</div>
+								</div>
+								<div class="offer-boxR">
+									<div class="offer-text">
+										<div class="text-title">
+											<sub>VALUE PACKAGE</sub>
+											<h4>Stay safe and relax</h4>
+										</div>
+										<div class="text-subtitle">
+											Trip with peace of mind
+										</div>
+										<div class="text-body">
+											<ul>
+												<li>
+													20% off our Room Rate
+												</li>
+												<li>
+													Daily breakfast for up to two guests
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="btn-details">
+										<a href=""><button>Details</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- offer 2 -->
+							<div class="offer-box swiper-slide">
+								<div class="offer-boxL">
+									<div class="offer-img">
+										<img src="../../asset/images/home/onebed1.jpg" alt="">
+									</div>
+								</div>
+								<div class="offer-boxR">
+									<div class="offer-text">
+										<div class="text-title">
+											<sub>VALUE PACKAGE</sub>
+											<h4>Stay safe and relax</h4>
+										</div>
+										<div class="text-subtitle">
+											Trip with peace of mind
+										</div>
+										<div class="text-body">
+											<ul>
+												<li>
+													20% off our Room Rate
+												</li>
+												<li>
+													Daily breakfast for up to two guests
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="btn-details">
+										<a href=""><button>Details</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+		      			<div class="swiper-button-prev"></div>
+		     			<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end Offers -->
+	<section class="footer-above">
+		<div class="container-xl">
+			<div class="footer-img">
+				<img src="../../asset/images/home/footer-img.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="upper">
+			<div class="container-xl">
+				<div class="row">
+					<div class="col-xl-3 offset-lg-1">
+						<div class="logo">
+							<img src="../../asset/images/footer/logo-img.png" alt="">
+						</div>
+					</div>
+					<div class="logo_mobile">
+						<img src="../../asset/images/footer/logo-img.png" alt="">
+					</div>
+					<div class="col-xl-8">
+						<div class="row hidden-in-mobile">
+							<div class="col-3">
+								<div class="menu-infomations">
+									<div class="title-info">
+										INFORMATIONS
+									</div>
+									<div class="body-info">
+										<ul class="infoMenu">
+											<li class="list-info"><a href="#">About Us</a></li>
+											<li class="list-info"><a href="#">Contact Us</a></li>
+											<li class="list-info"><a href="#">Location</a></li>
+											<li class="list-info"><a href="#">Offers</a></li>
+											<li class="list-info"><a href="#">Accommodations</a></li>
+											<li class="list-info"><a href="">Service & Amenites</a></li>
+											<li class="list-info"><a href="">Gallery</a></li>
+											<li class="list-info"><a href="">Terms & Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="get-intouch">
+									<div class="title-info">GET IN TOUCH</div>
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard<br> 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com<br>
+										+65 21 87600000</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="subscribe">
+									<div class="text-content">
+										<p>Get the latest news and great deals in your inbox</p>
+								</div>
+								<div class="input-wrap">
+									<div class="input-box">
+										<input type="email" class="input-email" id="input-email" placeholder="Type your email">
+									</div>
+									<div class="input-btn">
+											<button>Subscribe</button>
+										</div>
+								</div>
+								<div class="download-app">
+									<a href=""><div class="dl-btn on-ios">
+										<img src="../../asset/images/footer/app-store.png" alt="">
+									</div></a>
+									<a href=""><div class="dl-btn on-android">
+										<img src="../../asset/images/footer/google.png" alt="">
+									</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="get-intouch__mobile">
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard, 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com 
+										<br>
+									+65 21 87600000</p>
+									</div>
+								</div>
+					<div class="title-info__mobile">INFORMATIONS</div>
+						<ul class="list-item__mobile">
+	                        <li><a href="">About Us</a></li>
+	                        <li><a href="">Contact Us</a></li>
+	                        <li><a href="">Location</a></li>
+	                        <li><a href="">Offers</a></li>
+	                        <li><a href="">Accommodations
+							</a></li>
+							<li><a href="">Service & Amenites
+							</a></li>
+							<li><a href="">Gallery
+							</a></li>
+							<li><a href="">Terms & Conditions
+							</a></li>
+				    	</ul>
+				</div>
+			</div>
+		</div>
+			<div class="social-network">
+		        <div class="social-icon hidden-in-mobile">
+		            <ul class="list-icon">
+		            	<li><a href=""><img src="../../asset/images/footer/fb.png" alt=""></a></li>
+		            	<li><a href=""><img src="../../asset/images/footer/tw.png" alt=""></a></li>
+		            	<li><a href=""><img src="../../asset/images/footer/ins.png" alt=""></a></li>
+		            	<li><a href=""><img src="../../asset/images/footer/yt.png" alt=""></a></li>
+		            </ul>
+	            </div>
+			</div>
+			<div class="container-xl">
+        		<div class="divider"></div>
+    		</div>
+		    <div class="lower">
+		        <div class="container-xl">
+                    <div class="copyright">
+                        <p>	                            
+                        	© Lampor Hotel & Residence, Inc. 2021. All Rights Reserved.
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+
+	<script>
+    $(document).ready(function () {
+        let mobileNav = $('header.mobile nav')
+        $('header.mobile .logo').click(function () {
+            mobileNav.addClass('show')
+        })
+
+        $('header.mobile nav .close-btn').click(function () {
+            mobileNav.removeClass('show')
+        })
+    	})
+	</script>
+	<!-- Scroll menu -->
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+		    document.getElementById("navbar").style.height = "84px";
+		    document.getElementById("navbar").style.backgroundColor = "#fff";
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0.10)";
+		    document.getElementById("navbar").style.padding = "0px 24px";
+		    document.getElementById("logo").style.height = "36px";
+		    document.getElementById("logo").style.marginTop = "16px";
+		    document.getElementById("btn-discover").style.display = "none";
+		    document.getElementById("icon-bar-left").style.display = "none";
+		    document.getElementById("icon-bar-right").style.display = "none";
+		  } else {
+		    document.getElementById("navbar").style.height = "128px";
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0)";
+		    document.getElementById("logo").style.height = "48px";
+		     document.getElementById("logo").style.marginTop = "0";
+		    document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 0)";
+		     document.getElementById("btn-discover").style.display = "block";
+		      document.getElementById("icon-bar-left").style.display = "block";
+		      document.getElementById("icon-bar-right").style.display = "block";
+		  }
+		}
+	</script>
+	<!-- scroll smooth -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	      var hash = this.hash;
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+	</script>
+
+	<!-- end scroll -->
+
+	<!-- swiper slider -->
+	<script src="../../library/swiper-bundle/swiper-bundle.min.js"></script>
+	<script>
+      var swiper = new Swiper(".room-box", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        spaceBetween: 48,
+        coverflowEffect: {
+          rotate: 0,
+        },
+         pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+        breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 48
+        },
+        // when window width is >= 480px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 48
+        },
+        // when window width is >= 640px
+        1600: {
+          slidesPerView: 2,
+          spaceBetween: 48,
+        }
+       }
+
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".offers-slideBox", {
+        slidesPerView: 1,
+        spaceBetween: 240,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+	<!-- end swiper slider -->
+
+	<!-- service img js -->
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script>
+		$( ".card-item" ) .hover(function() {
+		      $( this )
+		        .toggleClass( "card-item-active" )
+		        .next()
+		          .stop( true, true )
+		          .slideToggle();
+		    });
+	</script>
+
+	<!-- calendar -->
+	<script src="../../js/mc-calendar.min.js"></script>
+	  <script>
+	    const myDatePicker = MCDatepicker.create({
+	      el: "#checkin",
+	      dateFormat: "MMM-DD-YYYY",
+	      bodyType: "inline",
+	      customWeekDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+	      customMonths: [
+	        "January",
+	        "February",
+	        "March",
+	        "April",
+	        "May",
+	        "June",
+	        "July",
+	        "August",
+	        "September",
+	        "October",
+	        "November",
+	        "December",
+	      ],
+	    });
+	    const myDatePicker2 = MCDatepicker.create({
+	      el: "#checkout",
+	      dateFormat: "MMM-DD-YYYY",
+	      bodyType: "inline",
+	      customWeekDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+	      customMonths: [
+	        "January",
+	        "February",
+	        "March",
+	        "April",
+	        "May",
+	        "June",
+	        "July",
+	        "August",
+	        "September",
+	        "October",
+	        "November",
+	        "December",
+	      ],
+	    });
+	</script>
+    
+    <!-- menu hidden -->
+    <script>
+    let icon = $('.menu-item__icon')
+    let currentContent = $('#content-follow-click')
+    let currentImage = $('#img-change-hover')
+    $(document).ready(function () {
+      if ($(window).width() < 1024) {
+        let currentIconActive = $('.menu-item__icon.active')
+        currentIconActive.children('img').attr('src', currentIconActive.attr('iconDisabled'))
+      }
+    })
+
+    icon.click(function () {
+      let currentIconActive = $('.menu-item__icon.active')
+      let currentIconDisableSrc = currentIconActive.attr('iconDisabled')
+      currentIconActive.children('img').attr('src', currentIconDisableSrc)
+      if ($(window).width() > 1024) {
+        $(this).children('img').attr('src', $(this).attr('iconActive'))
+      }
+      currentIconActive.removeClass('active')
+      $(this).addClass('active')
+      currentContent.text($(this).attr('data-content'))
+      currentImage.css({ 'background-image': `url("${$(this).attr('data-src')}")` })
+    })
+
+  </script>
+    <script>
+    let myAnchor = $('#show-me-more')
+    let scrollRoad = myAnchor.position().top
+    $('#show-me-more-btn').click(function (e) {
+      e.preventDefault()
+      let body = $('html, body')
+      body.animate({ scrollTop: scrollRoad }, 500)
+    })
+  </script>
+<!-- 
+  </script>
+    <script>
+    let myAnchor = $('#btn-discover')
+    let scrollRoad = myAnchor.position().top
+    $('#btn-discover').click(function (e) {
+      e.preventDefault()
+      let body = $('html, body')
+      body.animate({ scrollTop: scrollRoad }, 500)
+    })
+  </script> -->
+</body>
+</html>

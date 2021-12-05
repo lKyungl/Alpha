@@ -1,0 +1,88 @@
+/* Color pallete */
+/* Button type */
+/* Link type */
+/* Typo */
+.box-booking-2 {
+  max-width: 576px;
+  border: 1px solid #8a8787;
+}
+.box-booking-2 .box-booking__image {
+  max-width: 99.9%;
+  margin: auto;
+}
+.box-booking-2 .box-booking__image .booking-image {
+  width: 100%;
+  object-fit: cover;
+}
+.box-booking-2 .row-backgroud {
+  background: white;
+  width: 99.8%;
+  margin: auto;
+}
+.box-booking-2 .box-booking__content {
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+.box-booking-2 .box-booking__content .content-title {
+  letter-spacing: 5px;
+  max-width: 100%;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 500px;
+  text-align: center;
+}
+.box-booking-2 .box-booking__content .content {
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 12px;
+  margin: 0;
+}
+.box-booking-2 .box-booking__content .content:nth-child(2) {
+  padding-top: 32px;
+}
+.box-booking-2 .box-booking__content .content:nth-child(4) {
+  margin-bottom: 32px;
+}
+.box-booking-2 .box-booking__content .detai-bt {
+  margin: auto;
+  padding: 24px 48px;
+  background: transparent;
+  color: #332925;
+  border: 2px solid #0f0d0c;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  padding: 5px 35px;
+}
+.box-booking-2 .box-booking__content .detai-bt:hover {
+  border: 2px solid #0f0d0c;
+  background: #cac5c6;
+  color: #332925;
+}
+.box-booking-2 .box-booking__content .detai-bt.active {
+  border: 2px solid #332925;
+  background: #332925;
+  color: #efeeea;
+}
+@media (max-width: 580px) {
+  .box-booking-2 {
+    min-height: 550px;
+  }
+  .box-booking-2 .box-booking__content {
+    max-width: 100%;
+  }
+  .box-booking-2 .box-booking__content .content-title {
+    letter-spacing: 3px;
+    max-width: 100%;
+  }
+  .box-booking-2 .box-booking__content .content {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=box-booking-2.css.map */

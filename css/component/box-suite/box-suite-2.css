@@ -1,0 +1,81 @@
+.box-suite-2 .section-comfortable__logo {
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  display: flex;
+}
+.box-suite-2 .section-comfortable__logo .comfortable__logo {
+  opacity: 10%;
+  width: 60%;
+  margin: auto;
+}
+.box-suite-2 .section-comfortable__image {
+  width: 95%;
+  margin: auto;
+}
+.box-suite-2 .section-comfortable__image .comfortable__image {
+  width: 100%;
+  object-fit: cover;
+}
+.box-suite-2 .section-comfortable__image .comfortable-title {
+  padding: 24px 0 32px 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 104px;
+}
+.box-suite-2 .section-comfortable__image .comfortable-title b {
+  font-weight: 400;
+}
+.box-suite-2 .section-comfortable__image .comfortable-content {
+  max-width: 70%;
+  font-size: 20px;
+  line-height: 32px;
+}
+@media (max-width: 1463px) {
+  .box-suite-2 .section-comfortable__logo {
+    height: 60%;
+  }
+  .box-suite-2 .section-comfortable__image .comfortable-title {
+    padding: 48px 0 32px 0;
+    font-size: 64px;
+    line-height: 72px;
+  }
+  .box-suite-2 .section-comfortable__image .comfortable-content {
+    max-width: 700px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1463px) and (max-width: 1024px) {
+  .box-suite-2 .section-comfortable__image .comfortable-content {
+    max-width: 500px;
+  }
+}
+@media (max-width: 1463px) and (max-width: 580px) {
+  .box-suite-2 .section-comfortable__logo .comfortable__logo {
+    display: none;
+  }
+  .box-suite-2 .section-comfortable__image {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .box-suite-2 .section-comfortable__image .comfortable-title {
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .box-suite-2 .section-comfortable__image .comfortable-content {
+    max-width: 700px;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 18px 0 41px 0;
+  }
+}
+@media (max-width: 1463px) and (max-width: 580px) and (max-width: 1024px) {
+  .box-suite-2 .section-comfortable__image .comfortable-content {
+    max-width: 500px;
+  }
+}
+
+/*# sourceMappingURL=box-suite-2.css.map */

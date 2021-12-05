@@ -1,0 +1,64 @@
+/* Color pallete */
+/* Button type */
+/* Link type */
+/* Typo */
+.mc-calendar {
+  font-family: "Playfair Display", serif;
+  font-feature-settings: "pnum" on, "lnum" on;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 8px 16px rgba(15, 13, 12, 0.25);
+  max-width: 420px;
+  width: calc(100% - 20px);
+  max-height: 500px;
+  transition: none;
+}
+.mc-calendar button {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.mc-calendar button#mc-btn__clear {
+  color: #666666;
+  background-color: #eee;
+  padding: 12px 24px;
+}
+.mc-calendar button#mc-btn__cancel {
+  color: #666666;
+  background-color: #eee;
+  padding: 12px 24px;
+}
+.mc-calendar button#mc-btn__ok {
+  background: #332925;
+  color: #ffffff;
+  padding: 12px 24px;
+}
+.mc-calendar .mc-picker {
+  background-color: #fff;
+  color: #333333;
+}
+.mc-calendar .mc-picker .mc-picker__header {
+  color: inherit;
+  padding: 20px 20px 10px;
+}
+.mc-calendar .mc-picker .mc-picker__header .mc-select__data--month {
+  color: inherit;
+}
+.mc-calendar .mc-picker .mc-picker__body .mc-table .mc-table__weekday {
+  color: inherit;
+  font-size: 15px;
+}
+.mc-calendar .mc-picker .mc-picker__body .mc-table .mc-date {
+  font-size: 15px;
+  border: 1px solid transparent;
+}
+.mc-calendar .mc-picker .mc-date {
+  border-radius: 2px;
+}
+.mc-calendar .mc-picker .mc-date--active.mc-date--picked {
+  background: #dfdbdc;
+  border: 1px solid black;
+  color: #000;
+}
+
+/*# sourceMappingURL=date-picker.css.map */

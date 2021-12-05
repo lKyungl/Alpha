@@ -1,0 +1,344 @@
+footer {
+	margin-top: 120px;
+	background-color: #fff;
+  padding-top: 80px;
+} 
+
+footer ul {padding-left: 0}
+
+footer .upper {
+	max-width: 1424px;
+	margin: 0px auto 0px auto;
+}
+
+footer .upper .logo {
+	font-size: 56px;
+}
+
+footer .title-info {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	/* identical to box height, or 125% */
+
+	font-feature-settings: 'pnum' on, 'lnum' on;
+
+	/* B1 */
+
+	color: #04494A;
+	margin-bottom: 24px;
+}
+
+footer .body-info li {
+  margin: 8px 0;
+}
+
+footer li a {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	font-feature-settings: 'pnum' on, 'lnum' on;
+
+	/* T0 */
+
+	color: #0F0D0C;
+}
+
+footer .text-content p {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	font-feature-settings: 'pnum' on, 'lnum' on;
+
+	color: #000000;
+}
+
+footer .input-wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+footer .input-wrap {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 80px;
+}
+
+footer .list-item__mobile, .logo_mobile, .title-info__mobile, .get-intouch__mobile {
+  display: none;
+}
+footer .input-wrap .input-box {
+  flex: 1;
+  align-items: stretch;
+  max-width: 224px;
+}
+footer .input-wrap .input-box input {
+    font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+/* identical to box height, or 138% */
+
+font-feature-settings: 'pnum' on, 'lnum' on;
+  height: 100%;
+  width: 100%;
+  padding-left: 16px;
+  border: 1px solid #04494A;
+  box-sizing: border-box;
+  color: #0F0D0C;
+}
+
+footer .input-wrap .input-box input::placeholder {
+  color: #333333;
+  font-weight: normal;
+}
+footer .input-wrap .input-btn button {
+font-family: "Raleway";
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height, or 123% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.02em;
+font-feature-settings: 'pnum' on, 'lnum' on;
+padding: 8px 20px;
+color: #FFFFFF;
+background: #BF533B;
+border: none;
+border-radius: 16px;
+margin-left: 16px;
+border: 1px solid #BF533B;
+}
+footer .input-wrap .input-btn button:hover {
+  color: #BF533B;
+  background: #fff; 
+}
+
+footer .get-intouch .hotel-adress, .hotel-contact {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	font-feature-settings: 'pnum' on, 'lnum' on;
+
+	/* T0 */
+
+	color: #0F0D0C;
+}
+
+footer .download-app {
+	display: flex;
+}
+
+footer .download-app .dl-btn {
+	width: 135px;
+	height: 40px;
+	color: green;
+	background-color: orange;
+	margin-right: 16px;
+}
+
+footer .download-app .dl-btn:hover {
+  opacity: 0.75;
+}
+
+footer .divider {
+  height: 1px;
+  background-color: #888888;
+}
+footer .lower .copyright {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+footer .lower .copyright p {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	/* identical to box height, or 133% */
+
+	text-align: center;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+
+	/* T1 */
+
+	color: #333333;
+}
+footer .social-network {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+footer .list-icon {
+	display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .list-icon li {
+  height: 48px;
+  width: 48px;
+  margin-left: 8px;
+  opacity: 0.5;
+}
+
+footer .list-icon li:hover {
+  opacity: 0.9;
+}
+@media (max-width: 1463px) {
+  footer .upper {margin-top: 80px;
+	margin-bottom: 16px;
+padding: 0 24px;}
+footer .upper .container-xl .row {
+  margin: 0 40px;
+}
+footer .offset-lg-1 {
+    margin-left: 0%;
+}
+footer .row.hidden-in-mobile {padding-left: 8.3333333333333%;}
+footer .row.hidden-in-mobile .col-6 {
+  position: relative;
+  width: 41%;
+  margin-right: 8.3333333333333%;
+}
+footer .row.hidden-in-mobile .col-6 .subscribe {
+  position: absolute;
+  right: 0px;
+}
+
+footer .logo_mobile {
+	display: block;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  footer .logo {display: none !important;}
+  footer .input-wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  footer {padding-top: 40px}
+  footer .row.hidden-in-mobile {
+    display: none;
+  }
+  footer .logo_mobile {
+  display: block;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  footer .list-icon {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  }
+ footer .list-icon li {
+  height: 32px;
+  width: 32px;
+  margin: 0px 4px 16px;
+}
+footer .get-intouch__mobile{
+  display: block; 
+  text-align: center;
+  margin-bottom: 80px;
+}
+ footer .get-intouch__mobile .hotel-adress, .hotel-contact {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* T0 */
+
+  color: #0F0D0C;
+ }
+  footer .lower .copyright {
+    text-align: center;
+    font-size: 11px;
+  }
+  footer .input-wrap {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  footer .input-wrap .input-box {
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
+  footer .input-wrap .input-box input {
+    height: 40px;
+  }
+  footer .input-wrap button {
+    width: 100%;
+  }
+  footer .title-info__mobile {
+    font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* T0 */
+
+  color: #0F0D0C;
+  margin-bottom: 16px;
+  }
+  footer .list-item__mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  footer .list-item__mobile li {
+    color: #333;
+    font-size: 13px;
+    padding-bottom: 8px;
+  }
+  footer .list-item__mobile li a {
+    color: inherit;
+    font-size: inherit;
+  }
+  footer .list-item__mobile li a:hover {
+    color: #04494A;
+    font-weight: 700;
+  }
+  footer .list-item__mobile li:after {
+    content: "";
+    display: inline-block;
+    height: 80%;
+    padding-left: 10px;
+    margin-right: 10px;
+    transform: translateY(4px);
+    border-right: 1px solid #333;
+  }
+}
+
+

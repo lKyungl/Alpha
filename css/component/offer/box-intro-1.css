@@ -1,0 +1,79 @@
+/* Color pallete */
+/* Button type */
+/* Link type */
+/* Typo */
+.box-intro-1 .box-intro {
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box-intro-1 .box-intro .intro-title {
+  font-family: "Raleway";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fcfbf7;
+  color: #fcfbf7;
+  text-transform: uppercase;
+}
+.box-intro-1 .box-intro .intro-content .content-text {
+  font-family: "Raleway";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f0d0c;
+  padding-top: 32px;
+  color: #fcfbf7;
+  font-weight: 500;
+  font-size: 20px;
+}
+.box-intro-1 .box-intro-img {
+  width: 100%;
+  margin: auto;
+}
+.box-intro-1 .box-intro-img .intro-img {
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1463px) {
+  .box-intro-1 .box-intro {
+    max-width: 100%;
+  }
+  .box-intro-1 .box-intro .intro-content .content-text {
+    padding-top: 32px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .box-intro-1 .box-intro-img {
+    width: 100%;
+    padding-top: 34px;
+  }
+}
+@media (max-width: 580px) {
+  .box-intro-1 .box-intro {
+    max-width: 100%;
+  }
+  .box-intro-1 .box-intro .intro-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .box-intro-1 .box-intro .intro-content .content-text {
+    padding-top: 12px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .box-intro-1 .box-intro-img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=box-intro-1.css.map */

@@ -1,0 +1,14 @@
+.sliner-4 .box-suite-3 .slider .item-slide {
+  padding: 0px 5px;
+}
+.sliner-4 .box-suite-3 .row-box {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 786px) {
+  .sliner-4 .box-suite-3 .row-box .row-box {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=slider-4.css.map */

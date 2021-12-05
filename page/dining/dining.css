@@ -1,0 +1,899 @@
+
+nav .nav-wrapper {
+  display: flex;
+  height: 48px;
+  align-items: center;
+}
+.nav-item a {color: #333; margin-right: 24px}
+.nav-item.active a {color: #04494a; font-weight: bold;}
+.line-3 {
+  height: 24px;
+  border-right: 1px solid #333;
+  margin-right: 24px;
+}
+
+nav .nav-wrapper .nav-item.active {color: #04494a;}
+
+.nav-top,
+.nav-top_mobi {
+  overflow: hidden;
+  background-color: #fff;
+  height: 48px;
+  z-index: 80;
+  width: 100%;
+  margin-top: 56px;
+}
+
+#nav-top_mobi {display: none;}
+
+.nav-top.sticky {
+  position: fixed;
+  top: 84px;
+  width: 100%;
+  margin-top: 0px;
+  background-color: rgba(255,255,255,0.9);
+
+}
+.nav-top.sticky .nav-wrapper {
+  border-bottom: 1px solid #888;
+}
+.sticky + .contentx {
+  padding-top: 60px;
+}
+/*@media (max-width: 1023px) {
+  #nav-top {display: none;}
+  #nav-top_mobi {
+    display: block;
+    margin-top: 24px;
+  }
+}*/
+
+.heading-text {
+  margin-top: 96px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.heading-text .heading-title {
+  text-align: center;
+  color: #04494a;
+}
+
+/* Navbar links */
+/*#nav-top a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}*/
+
+/* Page content */
+/*.content {
+  padding: 16px;
+}
+*/
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/*.sticky {
+  position: fixed;
+  top: 84px;
+  width: 100%;
+}*/
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .heading-text {
+  padding-top: 228px;
+}
+
+section.banner-slide__pc {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+section.banner-slide__pc .banner-block {
+  position: relative;
+  display: flex;
+  align-items: unset;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.rowx > .columnx {
+  padding: 0 8px;
+}
+
+.rowx:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.columnx {
+  float: left;
+}
+.slider {padding-right: 8px;}
+.thumb {padding-left: 4px;}
+/* The Close Button */
+/*.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+*/
+/* Hide the slides by default */
+.mySlides {
+  display: block;
+  position: relative; 
+  overflow: hidden;
+  width: 100%;
+}
+.mySlides .overlay-img {
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, #0F0D0C 100%);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  z-index: 3;
+}
+
+.mySlides img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 2;
+  transition: width 2s;
+}
+
+.mySlides .slide-content {
+  position: absolute;
+  bottom: 32px;
+  left: 40px;
+  padding-right: 40px;
+  z-index: 4;
+  color: #FCFBF7;
+
+}
+
+.slide-content .title-res {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 16px
+}
+
+.slide-content .title-text {
+  margin-right: 16px; 
+}
+
+.text-des .rl-body1 {
+  letter-spacing: 0.02em;
+} 
+.content-bottom {
+  display: flex;
+  align-items: center;
+}
+.content-bottom .contentL {padding-right: 32px}
+.btn-make {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 33.3333333333%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+/*.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}*/
+
+.exam {
+  position: relative;
+  height: 100%; 
+  width: 100%;
+}
+img.demo {
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  opacity: 0.6;
+  
+}
+.res-name {
+  position: absolute;
+  width: 100%;
+  height: 56px;
+  padding-bottom: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+  bottom: 0px;
+  display: none;
+}
+.res-name .rl-sub1 {
+  color: #fff;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.active,
+.demo:hover {
+  opacity: 0.95;
+}
+
+.exam:hover .res-name {
+  display: none;
+}
+img.active {display: none;}
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section.team-intro .chef1_mobi {display: none;}
+.chef-intro .row {align-items: center;}
+
+
+section.footer-above .above-img__pc img {
+  width: 100%;
+}
+
+/*section.food-tour .container-xl {
+  margin-top: 144px;
+  max-width: 1180px;
+  display: grid;
+  position: relative;
+  grid-template-areas:
+    "title card-1"
+    "card-2 card-1"
+    "card-2 card-3"
+    "card-4 card-3"
+    "card-4 card-5"
+    "empty card-5";
+}
+
+section.food-tour .container-xl::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #bbbbbb;
+  position: absolute;
+  top: 50px;
+  left: calc(50% + 1px);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+section.food-tour .container-xl::after {
+  content: "";
+  display: inline-block;
+  height: 1286px;
+  width: 1px;
+  background-color: #bbbbbb;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+}
+
+section.food-tour .title-tour {
+  grid-area: title;
+  color: #04494a;
+  height: 250px;
+  text-align: right;
+  padding-right: 83px;
+  margin-top: 40px;
+}
+
+section.food-tour .food-item:nth-child(2) {
+  grid-area: card-1;
+}
+section.food-tour .food-item:nth-child(3) {
+  grid-area: card-2;
+}
+section.food-tour .food-item:nth-child(4) {
+  grid-area: card-3;
+}
+section.food-tour .food-item:nth-child(5) {
+  grid-area: card-4;
+}
+section.food-tour .food-item:nth-child(6) {
+  grid-area: card-5;
+}
+
+section.food-tour .food-item:nth-child(even) {
+  margin-left: auto;
+  text-align: left;
+}
+
+section.food-tour .food-item:nth-child(odd) {
+  margin-right: auto;
+  text-align: right;
+}
+
+section.food-tour .food-item {
+  max-width: 464px;
+  height: 500px;
+}
+
+section.food-tour .food-item .food-img {
+}
+section.food-tour .food-item .food-content {
+}
+section.food-tour .food-item .food-content .text-sub {
+}
+section.food-tour .food-item .food-content .text-sub .rl-sub2 {
+  padding-top: 16px;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+section.food-tour .food-item .food-content .text-sub .rl-sub2::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 93px;
+  height: 1px;
+  top: 50%;
+  background-color: #bbbbbb;
+}
+
+section.food-tour
+  .food-item:nth-child(even)
+  .food-content
+  .text-sub
+  .rl-sub2::after {
+  right: calc(100% + 20px);
+}
+
+section.food-tour
+  .food-item:nth-child(odd)
+  .food-content
+  .text-sub
+  .rl-sub2::after {
+  left: calc(100% + 20px);
+}
+
+section.food-tour .food-item .food-content .text-body {
+}
+section.food-tour .food-item .food-content .text-body .rl-body2 {
+  line-height: 20px;
+}*/
+
+
+/*foodtour v2*/
+
+section.food-tour {
+  margin-bottom: 144px;
+}
+section.food-tour .foodtourBlock {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+section.food-tour .title-tour {
+  color: #04494a;
+  position: absolute;
+  top: 64px;
+  right: 58.33333333333%;
+}
+
+section.food-tour .foodtourBlock::before {
+  content: "";
+  display: inline-block;
+  top: 80px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #bbbbbb;
+  position: absolute;
+  left: calc(50% + 1px);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+section.food-tour .foodtourBlock::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: #bbbbbb;
+  top: 96px;
+  bottom: 0;
+  left: 50%;
+  margin-left: 0px;
+  height: calc(100% - 193px);
+}
+
+section.food-tour .food-item {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+
+
+
+section.food-tour .food-item.right {
+  padding-left: 8.3333333%;
+}
+section.food-tour .food-item.left {
+  padding-right: 8.3333333%;
+}
+
+/* Place the container to the left */
+section.food-tour .left {
+  left: 0;
+}
+
+/* Place the container to the right */
+section.food-tour .right {
+  left: 50%;
+}
+
+section.food-tour .left .text-sub::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  margin-top: 8px;
+  width: 0;
+  z-index: 1;
+  right: 0px;
+  border-bottom: 1px solid #bbbbbb;
+  width: 13.666666666%;
+}
+
+section.food-tour .right .text-sub::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  margin-top: 8px;
+  width: 0;
+  z-index: 1;
+  left: 0px;
+  border-bottom: 1px solid #bbbbbb;
+  width: 13.666666666%;
+}
+
+section.food-tour .food-item img {
+  width: 100%;
+}
+
+section.food-tour .food-item .text-sub {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+section.food-tour .food-item.left {
+  text-align: right;
+}
+
+section.food-tour .margin-d {
+  margin-top: -136px;
+}
+
+
+@media screen and (max-width: 1132px) {
+  section.food-tour .foodtourBlock::after {
+    height: calc(100% - 213px);
+  }
+  section.food-tour .margin-d {
+    margin-top: -96px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  section.food-tour .foodtourBlock::after {
+    height: calc(100% - 193px);
+  }
+}
+@media screen and (max-width: 956px) {
+  section.food-tour .foodtourBlock::after {
+    height: calc(100% - 213px);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  section.food-tour .foodtourBlock::after {
+    height: calc(100% - 200px);
+  }
+  section.food-tour .margin-d {
+    margin-top: -64px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  /* Place the timelime to the left */
+  section.food-tour .foodtourBlock {
+    max-width: 480px;
+    margin: 80px auto;
+  }
+  section.food-tour .foodtourBlock::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #bbbbbb;
+    position: absolute;
+    left: 0px;
+    transform: translateX(-50%);
+    z-index: 1;
+    top: 0;
+  }
+  section.food-tour .foodtourBlock::after {
+    top: 0;
+    left: 0px;
+    height: calc(100% - 72px);
+  }
+  section.food-tour .title-tour {
+    color: #04494a;
+    position: relative;
+    margin-bottom: 56px;
+     top: 0; 
+    right: auto;
+    left: 32px;
+  }
+  /* Full-width containers */
+  section.food-tour .food-item.left,
+  section.food-tour .food-item.right {
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 0px;
+  }
+
+  section.food-tour .margin-d {
+    margin-top: 48px;
+  }
+
+  /* Make sure all circles are at the same spot */
+  section.food-tour .left .text-sub::before,
+  section.food-tour .right .text-sub::before {
+  left: 0;
+  width: 20px;
+  margin-top: 6px;
+  right: auto;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  section.food-tour .food-item.right {
+    left: 0%;
+  }
+  section.food-tour .food-item.left {
+    text-align: left;
+  }
+  section.food-tour .food-item .text-sub {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+}
+/*end*/
+
+
+/*contact box*/
+.contact-box .contact-us {
+  border: 0.5px solid #04494a;
+  align-items: center;
+  margin-top: 144px;
+  margin-bottom: 144px;
+}
+
+.contact-box .contact-us .cover-box {
+  margin: 24px 80px;
+}
+
+
+.contact-box .contentL {
+  color: #0f0d0c;
+  margin: auto 0;
+}
+
+.contact-box .contentR {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-box .contentR .phone-number{
+  color: #0f0d0c;
+}
+.contact-box .contentL .sub-text {
+  text-align: left;
+}
+
+.contact-box .contentR .btn-contact {margin-left: 24px;}
+.btn-contact button.btn-3-or-f {
+  padding: 16px 64px;
+}
+
+@media (max-width: 1182px) {
+  .contact-box .contact-us .cover-box {
+    margin: 16px 24px;
+  } 
+  .btn-contact button.btn-3-or-f {
+    padding: 16px 48px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .contact-box .contentR .btn-contact {
+    margin: 16px auto 0 auto;
+  }
+  .contact-box .contentL {
+    margin-bottom: 8px;
+  }
+  .contact-box .contentR {
+    display: block;
+    text-align: center;
+  }
+  .contact-box .contentL .sub-text {
+    text-align: center;
+  }
+   .contact-box .contentR .phone-number {
+    margin-bottom: 32px;
+   }
+  .contact-box .contact-us .cover-box {
+    margin: 40px 4px;
+  } 
+  .contact-box .contact-us {max-width: 480px; margin: 80px auto;}
+}
+
+/*end contact box*/
+
+
+section.team-intro .intro-headingtext {
+  margin-top: 144px;
+  width: 100%;
+  text-align: center;
+  color: #04494a;
+  margin-bottom: 96px;
+}
+
+
+section .chef-intro .row {
+  align-items: center;
+}
+
+section .chef-intro {margin-bottom: 136px;}
+
+section .chef-introContent .line5 {
+  width: 132px;
+  border-bottom: 0.5px solid #888;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+section .chef-introContent .chef-name {
+  margin-bottom: 4px;
+}
+ 
+section .chef-introContent .chef-quote {
+  margin-bottom: 8px;
+}
+
+section .chef-img img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1463px) {
+  .mySlides .overlay-img {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #0F0D0C 100%);
+  }
+  nav.nav-top {margin: 24px auto 0 auto;}
+  section.heading-text .container-xl,
+  section.banner-slide__pc .container-xl, section.team-intro .container-xl,
+  section.contact-box .container-xl, section.food-tour .container-xl {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+/*
+@media (max-width: 1182px) {
+  section.food-tour .container-xl {
+    display: block;
+  }
+  section.food-tour .container-xl::before, 
+  section.food-tour .container-xl::after {
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}*/
+@media (max-width: 1023px) {
+  section.banner-slide__pc .banner-block {
+    display: block;
+  }
+  .slider {
+    padding-right: 0px;
+  }
+  .thumb {
+    padding-left: 0px;
+    padding-top: 8px;
+  }
+  .mySlides {
+    height: 480px;
+  } 
+  img.demo {
+    height: 120px;
+  }
+  .nav-top.sticky {
+    position: fixed;
+    top: 68px;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .offset-lg-2 {
+    margin-left: 0;
+  }
+}
+
+section.banner-slide__mobi {display: none;}
+
+@media (max-width: 767.9px) {
+  section.team-intro .chef1_mobi {display: block;}
+  section.team-intro .chef1_pc {display: none;}
+  section.team-intro .chef-intro {
+    max-width: 480px;
+    margin: 40px auto; 
+  }
+  section.team-intro .intro-headingtext {
+    margin-top: 96px;
+    margin-bottom: 40px;
+  }
+
+  section .chef-intro {margin-bottom: 80px;}
+
+  section .chef-introContent .line5 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  section .chef-introContent {
+    margin-bottom: 24px
+  }
+  section .chef-introContent .chef-name {
+    margin-bottom: 4px;
+  }
+   
+  section .chef-introContent .chef-quote {
+    margin-bottom: 8px;
+  }
+  section .chef-introContent .chef-profile {
+    margin-bottom: 24px;
+  }
+  section .chef-img img {
+    width: 100%;
+    height: 440px;
+    object-position: 80% 5%;
+  }
+  section.banner-slide__mobi {display: block;}
+  section.banner-slide__pc {display: none;}
+  section.banner-slide__mobi .slider__mobi {
+    overflow: hidden;
+    width: 100%;
+  }
+  .mySlides__mobi img {
+    width: 100%;
+    height: 280px;
+  }
+  .mySlides__mobi .title-res {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .mySlides__mobi .title-res {color: #0F0D0C;}
+
+  .mySlides__mobi .title-res .rl-sub2 {
+    font-weight: 600;
+    color: #333;
+  }
+  .mySlides__mobi .content-bottom {
+    display: block;
+  }
+  .mySlides__mobi .content-bottom .contentL {
+    padding-right: 0;
+    color: #333;
+  }
+  .mySlides__mobi .content-bottom .contentR .btn-make {
+    display: block;
+    margin: 24px auto 0 auto;
+    max-width: 240px;
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 16px;
+
+
+}
+
+@media (max-width: 500px) {
+  .nav-top .rl-sub1 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .nav-item a {margin-right: 16px}
+  .line-3 {
+    margin-right: 16px;
+  }
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -40px;
+  }
+}
+

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Lampor</title>
+	<link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+	<link rel="stylesheet" href="../../library/swiper-bundle/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../css/base.css"/>
+	<link rel="stylesheet" href="../../css/index.css" />
+	<link rel="stylesheet" href="../../css/btn.css"/>
+	<link rel="stylesheet" href="../../css/component/header/header-1.css" />
+	<link rel="stylesheet" href="../../css/component/footer/footer-1.css" />
+	<link rel="stylesheet" href="booking_2.css" />
+</head>
+<body>
+	<!-- Header -->
+	<header class="pc" id="navbar">
+		<div class="container-xl custom">
+			<div class="row no-gutters">
+				<div class="col-lg-3 col-6">
+					<div class="logo">
+						<a href="../home/home.html" id="logo">
+							<img src="../../asset/images/header/logo_lampor_1.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="menu-right col-lg-6">
+					<ul class="list">
+							<li class="item" id="menu-item"><a href="../home/home.html"><span>Overview</span></a></li>
+							<li class="item" id="menu-item"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+							<li class="item" id="menu-item"><a href="../amenities/amenities.html">Services & Amenities</a></li>
+							<li class="item" id="menu-item"><a href="../offer/offer.html">Offers</a></li>
+					</ul>
+				</div>	
+				<div class="menu-left col-lg-3 col-6">
+					<div class="action-wrapper">
+							<div class="icon place">
+								<a href="../location/location.html"><img src="../../asset/images/_others/location-d.png" alt=""></a>
+							</div>
+							<div class="line-between"></div>
+							<div class="icon account">
+								<a href="../login/login_1.html"><img src="../../asset/images/_others/account-d.png" alt=""></a>
+							</div>
+							<div class="btn-1 btn-g">
+								<a href="../booking/booking_1.html"><button>Booking</button></a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="mobile">
+		<div class="container-xl">
+			<div class="wrapbar">
+				<div class="wrapcol1">
+					<div class="menuHamburger" onclick="openNav()">
+						<div class="bar-1"></div>
+						<div class="bar-2"></div>
+						<div class="bar-3"></div>
+					</div>
+				</div>
+				<div class="wrapcol2">
+					<div class="logo">
+						<a href="../home/home.html"><img src="../../asset/images/header/logo_lp.png" alt=""></a>
+					</div>
+				</div>
+				<div class="wrapcol3">
+					<div class="btn-wrap">
+						<a href="../booking/booking.html"><button>Booking</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<nav id="myNav" class="overlay">
+			<div class="close-btn">
+				 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			</div>
+			<div class="overlay-content">
+				<ul class="list">
+					<li class="item"><a href="../home/home.html">Overview</a></li>
+					<li class="item"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+					<li class="item"><a href="../amenities/amenities.html">Services & Amenities</a></li>
+					<li class="item"><a href="../offer/offer.html">Offers</a></li>
+					<li class="item"><a href="../location/location.html">Location</a></li>
+					<li class="item"><a href="../account/account.html">My Account</a></li>
+				</ul>
+				<ul class="signin-up">
+					<li class="item signin"><a href="../login/login_1.html">Sign in</a></li>
+					<li class="line"></li>
+					<li class="item signup"><a href="../register/register_1.html">Register</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- End Header -->
+
+	<!-- Chose a package -->
+	<div class="container-xl">
+		<div class="heading-title"><div class="pd-heading5"><a href="booking_3.html"><img src="../../asset/images/_others/back.png" alt=""></a>Guest Details</div></div>
+	</div>
+	<!-- end Chose a package -->
+
+	<!-- booking -->
+	<section class="booking">
+		<div class="container-xl">
+			<div class="row">
+				<div class="blockL booking4 col-lg-7">
+					<div class="booking-options__block rl-heading6-active">
+                        <div class="booking-options__txt active">
+                            <div class="btn-chose-book btn-your">Book for yourself</div>
+                        </div>
+                        <div class="line7"></div>
+                        <div class="booking-options__txt">
+                        	<div class="btn-chose-book btn-someone">Book for someone else</div>
+                        </div>
+                    </div>
+					<div class="booking-options__block">
+                        <div class="login__txt rl-sub2">
+                            <a href="../login/login_1.html">Login</a> to your own account and make a booking faster
+                        </div>
+                    </div>
+					<!-- form -->
+					<div class="form-guest">
+						<div class="form-container">
+								<div class="contact-info">
+									<div class="contact-form__title"><div class="rl-heading4">Contact info</div></div>
+									<div class="input-form row">
+										<!-- item 1 -->
+										<div class="input-item col-lg-6">
+											<div class="input-label1">
+												<div class="rl-sub2">Country/Region*</div>
+											</div>
+											<div class="input-box1">
+												<select class="rl-body1" id="region" name="fsname" required>
+													<option value="eng">England</option>
+												    <option value="vie">Vietnam</option>
+												    <option value="aus">Australia</option>
+												    <option value="sin">Singapore</option>
+												</select>
+											</div>
+										</div>
+										<!-- item 2 -->
+										<div class="input-item col-lg-6">
+											<div class="input-label1">
+												<div class="rl-sub2">Saluation*</div>
+											</div>
+											<div class="input-box1">
+												<select class="rl-body1" id="salua" name="salua">
+										      <option value="mr">Mr.</option>
+										      <option value="mrs">Mrs.</option>
+										      <option value="ms">Ms.</option>
+										      <option value="dr">Dr.</option>
+										    </select>
+											</div>
+										</div>	
+										<!-- item 3 -->
+										<div class="input-item">
+											<div class="input-label1">
+												<div class="rl-sub2">First name*</div>
+											</div>
+											<div class="input-box1">
+												<input class="rl-body1" type="text" placeholder="First name" name="fsname" required>
+											</div>
+										</div>	
+										<!-- item 4 -->
+										<div class="input-item">
+											<div class="input-label1">
+												<div class="rl-sub2">Last name*</div>
+											</div>
+											<div class="input-box1">
+												<input class="rl-body1" type="text" placeholder="Last name" name="lsname" required>
+											</div>
+										</div>	
+										<!-- item 5 -->
+										<div class="input-item">
+											<div class="input-label1">
+												<div class="rl-sub2">Mobile number*</div>
+											</div>
+											<div class="input-box1">
+												<input class="rl-body1" type="phone" placeholder="Mobile number" name="fsmobi" required>
+											</div>					
+										</div>	
+										<!-- item 6 -->
+										<div class="input-item">
+											<div class="input-label1">
+												<div class="rl-sub2" for="email">Email address*</div>
+											</div>
+											<div class="input-box1">
+												<input class="rl-body1" type="text" placeholder="Email address" name="email
+											" required>
+											</div>
+											<div class="input-note">
+                                                This is the email we will send your confirmation to.
+                                            </div>
+										</div>
+										<!-- item 6 -->
+										<div class="input-item">
+											<div class="input-label1">
+												<div class="rl-sub2" for="email">Confirm email address*</div>
+											</div>
+											<div class="input-box1">
+												<input class="rl-body1" type="text" placeholder="Email address" name="email
+											" required>
+											</div>
+										</div>
+										<!-- item 7 -->
+										<div class="input-item">
+											<div class="input-label1">
+												<div class="rl-sub2">Prefered Language*</div>
+											</div>
+											<div class="input-box1">
+												<select class="rl-body1" id="lang" name="fsname" required>
+													<option value="eng">English</option>
+												    <option value="vie">Vietnamese</option>
+												    <option value="china">Chinese</option>
+												    <option value="sin">Singapore</option>
+												</select>
+											</div>
+										</div>
+										<!-- end -->
+									</div>
+								</div>
+								<div class="payment-method">
+									<div class="contact-form__title"><div class="rl-heading4">Payment Information</div></div>
+									<div class="input-form">
+										<!-- item 1 -->
+										<div class="input-item col-lg-6 col-md-8">
+											<div class="input-label1">
+												<div class="rl-sub2">Accepted Cards</div>
+											</div>
+											<div class="card-option">
+												<div class="visa card"><img src="../../asset/Icon_logo/credit_logo1.png" alt=""></div>
+												<div class="master card"><img src="../../asset/Icon_logo/credit_logo2.png" alt=""></div>
+												<div class="america card"><img src="../../asset/Icon_logo/credit_logo3.png" alt=""></div>
+											</div>
+										</div>
+										<!-- item 2 -->
+										<div class="input-item col-lg-6 col-md-8">
+											<div class="input-label1">
+												<div class="rl-sub2">Name on Card*</div>
+											</div>
+											<div class="input-box1">
+												<input class="rl-body1" type="text" placeholder="First name" name="fsname" required>
+											</div>
+										</div>	
+										<!-- item 3 -->
+										<div class="input-item col-lg-6 col-md-8">
+											<div class="input-label1">
+												<div class="rl-sub2">Card Number*</div>
+											</div>
+											<div class="input-box1">
+												<input class="rl-body1" type="text" placeholder="First name" name="fsname" required>
+											</div>
+										</div>	
+										<!-- item 4 -->
+										<div class="input-item col-md-8 col-lg-6">
+											<div class="input-label1">
+												<div class="rl-sub2">Card Expiration Date (MM/YY)*</div>
+											</div>
+											<div class="input-box1">
+												<input class="rl-body1" type="text" placeholder="Last name" name="lsname" required>
+											</div>
+										</div>	
+										<!-- end -->
+									</div>
+								</div>
+								 <div class="wrapper-block">
+                                    <div class="contact-form__title rl-heading4">
+                                        Policies
+                                    </div>
+                                    <div class="contact-form__form">
+                                        <div class="checkin-info">
+                                            <div class="checkin-info__title rl-sub2">
+                                                Check-in
+                                            </div>
+                                            <div class="checkin-info__content rl-body2">
+                                                After 3:00 PM
+                                            </div>
+                                        </div>
+                                        <div class="checkin-info">
+                                            <div class="checkin-info__title rl-sub2">
+                                                Check-out
+                                            </div>
+                                            <div class="checkin-info__content rl-body2">
+                                                After 3:00 PM
+                                            </div>
+                                        </div>
+                                        <div class="checkin-info">
+                                            <div class="checkin-info__title rl-sub2">
+                                                Room
+                                            </div>
+                                            <div class="checkin-info__content rl-body2">
+                                                1 Executive Suite - King
+                                            </div>
+                                        </div>
+                                        <div class="checkin-info">
+                                            <div class="checkin-info__title rl-sub2">
+                                                Guarantee Policy
+                                            </div>
+                                            <div class="checkin-info__content rl-body2">
+                                                Credit Card details are required to guarantee the reservation.
+                                            </div>
+                                        </div>
+                                        <div class="checkin-info">
+                                            <div class="checkin-info__title rl-sub2">
+                                                Cancel Policy
+                                            </div>
+                                            <div class="checkin-info__content rl-body2">
+                                                Cancel 2 days prior to arrival by 15:00 hotel local time to avoid one
+                                                night
+                                                room night penalty plus tax. </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="messages">
+									<div class="input-label1"><div class="rl-heading6-active">Messages</div></div>
+									<textarea class="rl-body1" id="subject" name="subject" placeholder="text your messages" style="height:200px"></textarea>
+								</div>
+								<div class="checkin-info confirmation">
+                                    <div class="checkin-info__title rl-heading6-active">Acknowledgement</div>
+                                    <div class="input-item flex">
+										<div class="check">
+											<button class="check-box" onclick="checkBox()">
+											</button>	
+											<div class="tick-allow tophone active" id="tickallow">✓</div>
+										</div>
+								        <div class="input-label1 rl-body2" style="color: #333">I agree with the Terms & Conditions.</div>
+									</div>
+									<div class="input-item flex">
+										<div class="check">
+											<button class="check-box" onclick="checkBox()"></button>
+											<div class="tick-allow tomail" id="tickallow">✓</div>
+										</div>
+										<div class="input-label1 rl-body2" style="color: #333">Yes, I would like to receive newsletters and special offers by email.</div>
+									</div>
+								</div>
+								<div class="btn-submit">
+									<button type="button" class="btn-3-gr-f" onclick="document.getElementById('id01').style.display='block'">Confirm Booking</button>
+								</div>
+							</div>
+						
+					</div>
+					<!-- end form -->
+				</div>
+				<div class="blockR col-lg-4 offset-lg-1" id="blockR">
+					<div class="your-stay">
+						<div class="title-text"><div class="rl-heading6">Your Stay</div></div>
+						<div class="check-time">
+							<div class="check-in">
+								<div class="checkin-sub"><div class="rl-sub2">Check-in time</div></div>
+								<div class="checkin-date"><div class="rl-body2">After 3:00 PM </div></div>
+							</div>
+							<div class="check-out">
+								<div class="checkin-sub"><div class="rl-sub2">Check-out time</div></div>
+								<div class="checkin-date"><div class="rl-body2">Before 12:00 PM</div></div>
+							</div>
+						</div>
+						<div class="stay-info">
+							<div class="room-guest">
+								<div class="rl-body2">Dec 23rd, 2021 - Dec 29th, 2021  </div>
+								<div class="rl-body2">2 Guests</div>
+							</div>
+							<div class="btn-change"><a href="booking_1.html" class="rl-sub3">Change</a></div>
+						</div>
+						<div class="room-select">
+							<div class="room-info">
+								<div class="room-name"><div class="rl-body1">Executive Suite - King</div></div>
+								<div class="select-package"><div class="rl-body3">Stay safe and relax - 20% Off</div></div>
+								<div class="number-night"><div class="rl-caption">5 nights</div></div>
+							</div>
+							<div class="room-price">$900</div>
+						</div>
+						<div class="tax-fee">
+							<div class="text-tax">
+								<div class="title-tax"><div class="rl-sub2">Taxes and Fees</div></div>
+								<div class="num-tax"><div class="pd-sub2">$160</div></div>
+							</div>
+						</div>
+						<div class="line-btw"></div>
+						<div class="total">
+							<div class="title-total"><div class="rl-sub2">Total:</div></div>
+							<div class="num-total"><div class="pd-sub2">$1060</div></div>
+						</div>
+						<div class="btn-bookNow"><a href="booking_2.html"><button class="btn-2-gr-b">Change booking</button></a></div>
+					</div>
+					<div class="service-charge">
+						<div class="charge-title"><div class="rl-sub2">Service Charge</div></div>
+						<div class="charge-text"><div class="rl-body3">Service Charge of 10% of room rate (plus applicable taxes) will be applied to all reservations. This charge is in addition to the room rate per night. This charge is intended to cover a portion of costs associated with our employees.</div></div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- end package -->
+	<!-- note -->
+	<section>
+		<div class="container-xl">
+			<div class="note-x">
+				<div class="col-lg-8 offset-lg-2 col-md-8 col-md-2">
+					<div class="note-sub rl-sub2">PLEASE NOTE*</div> 
+					<div class="note-text rl-body2">All offers are subject to availability at the time of reservation. Offers are not substantial in conjunction with any other offer or contract and don't apply to groups. Rates are per room, per night, change by entry date and/or length of stay, and don't incorporate pertinent required property fees (for case resort expenses or benefit charges), tips, or government forced charges, benefit charges, demands or extra charges, unless something else noted. Early departure fees may apply. Rates are subject to change.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end note -->
+	<!-- footer -->
+	<footer>
+		<div class="upper">
+			<div class="container-xl">
+				<div class="row">
+					<div class="col-xl-3 offset-lg-1">
+						<div class="logo">
+							<img src="../../asset/images/footer/logo-img.png" alt="">
+						</div>
+					</div>
+					<div class="logo_mobile">
+						<img src="../../asset/images/footer/logo-img.png" alt="">
+					</div>
+					<div class="col-xl-8">
+						<div class="row hidden-in-mobile">
+							<div class="col-3">
+								<div class="menu-infomations">
+									<div class="title-info">
+										INFORMATIONS
+									</div>
+									<div class="body-info">
+										<ul class="infoMenu">
+											<li class="list-info"><a href="#">About Us</a></li>
+											<li class="list-info"><a href="#">Contact Us</a></li>
+											<li class="list-info"><a href="#">Location</a></li>
+											<li class="list-info"><a href="#">Offers</a></li>
+											<li class="list-info"><a href="#">Accommodations</a></li>
+											<li class="list-info"><a href="">Service & Amenites</a></li>
+											<li class="list-info"><a href="">Gallery</a></li>
+											<li class="list-info"><a href="">Terms & Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="get-intouch">
+									<div class="title-info">GET IN TOUCH</div>
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard<br> 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com<br>
+										+65 21 87600000</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="subscribe">
+									<div class="text-content">
+										<p>Get the latest news and great deals in your inbox</p>
+								</div>
+								<div class="input-wrap">
+									<div class="input-box">
+										<input type="email" class="input-email" id="input-email" placeholder="Type your email">
+									</div>
+									<div class="input-btn">
+											<button>Subscribe</button>
+										</div>
+								</div>
+								<div class="download-app">
+									<a href=""><div class="dl-btn on-ios">
+										<img src="../../asset/images/footer/app-store.png" alt="">
+									</div></a>
+									<a href=""><div class="dl-btn on-android">
+										<img src="../../asset/images/footer/google.png" alt="">
+									</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="get-intouch__mobile">
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard, 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com 
+										<br>
+									+65 21 87600000</p>
+									</div>
+								</div>
+					<div class="title-info__mobile">INFORMATIONS</div>
+						<ul class="list-item__mobile">
+	                        <li><a href="">About Us</a></li>
+	                        <li><a href="">Contact Us</a></li>
+	                        <li><a href="">Location</a></li>
+	                        <li><a href="">Offers</a></li>
+	                        <li><a href="">Accommodations
+							</a></li>
+							<li><a href="">Service & Amenites
+							</a></li>
+							<li><a href="">Gallery
+							</a></li>
+							<li><a href="">Terms & Conditions
+							</a></li>
+				    	</ul>
+				</div>
+			</div>
+		</div>
+			<div class="social-network">
+		        <div class="social-icon hidden-in-mobile">
+		            <ul class="list-icon">
+		            	<li><a href=""><img src="../../asset/images/footer/fb.png" alt=""></a></li>
+		            	<li><a href=""><img src="../../asset/images/footer/tw.png" alt=""></a></li>
+		            	<li><a href=""><img src="../../asset/images/footer/ins.png" alt=""></a></li>
+		            	<li><a href=""><img src="../../asset/images/footer/yt.png" alt=""></a></li>
+		            </ul>
+	            </div>
+			</div>
+			<div class="container-xl">
+        		<div class="divider"></div>
+    		</div>
+		    <div class="lower">
+		        <div class="container-xl">
+                    <div class="copyright">
+                        <p>	                            
+                        	© Lampor Hotel & Residence, Inc. 2021. All Rights Reserved.
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- The Modal -->
+	<div id="id02" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialo modal-dialog-centered">
+			<form class="modal-content animate" action="/action_page.php">
+				<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<div class="popup-result">
+				<div class="img-result"><img src="../../asset/Icon_logo/stick.png" alt="">
+				</div>
+				<div class="result-sub"><div class="rl-heading6">Subscribe successfully!</div></div>
+				<div class="result-text"><div class="rl-body3">You will receive useful information from us.</div></div>
+			</div>
+			<div class="btn-done"><button type="button" onclick="document.getElementById('id02').style.display='none'" class="btn-2-gr-f">Done</button></div>
+			</form>
+		</div>
+	</div>
+	<!-- end modal -->
+	<!-- the modal -->
+	<div id="id01" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialo modal-dialog-centered">
+			<form class="modal-content animate" action="/action_page.php">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<div class="popup-result">
+				<div class="img-result"><img src="../../asset/Icon_logo/stick.png" alt="">
+				</div>
+				<div class="result-sub"><div class="rl-heading6">Your booking fuccessfully!</div></div>
+				<div class="result-text"><div class="rl-body3">We have sent your order details to your email inbox. See you soon at Lampor Hotel!</div></div>
+			</div>
+			<div class="btn-done"><a href="../account/profile.html"><button type="button" class="btn-2-gr-f">Other Booking</button></a></div>
+			</form>
+		</div>
+	</div>
+	<!-- end the modal -->
+
+
+	<!-- swiper slider -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="jquery.scrollify.js"></script>
+	<script src="../../library/swiper-bundle/swiper-bundle.min.js"></script>\
+
+	<!-- Scroll menu -->
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0.10)";
+		  } else {
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0)";
+		  }
+		}
+	</script>
+
+	<script>
+		$(".tick-allow").click(function(){
+  		$(".tophone").addClass("active");
+  		$(".tomail").addClass("active");
+	});
+	</script>
+
+	<script>
+	// Get the modal
+	var modalSub = document.getElementById('id02');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modalSub) {
+	    modalSub.style.display = "none";
+	  }
+	}
+	</script>
+	<script>
+	// Get the modal
+	var modalBook = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modalBook) {
+	    modalBook.style.display = "none";
+	  }
+	}
+	</script>
+	<script>
+		/* Open */
+		function openNav() {
+		  document.getElementById("myNav").style.height = "100%";
+		}
+
+		/* Close */
+		function closeNav() {
+		  document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* Color pallete */
+/* Button type */
+/* Link type */
+/* Typo */
+.box-booking-3.listOptions-wrapper {
+  background-color: #fff;
+  margin-top: -64px;
+  margin-bottom: 64px;
+}
+.box-booking-3.listOptions-wrapper .indicator {
+  padding-top: 33px;
+  padding-bottom: 40px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.box-booking-3.listOptions-wrapper .indicator .icon img {
+  max-width: 20px;
+}
+.box-booking-3.listOptions-wrapper .listOptions {
+  max-width: 914px;
+  margin: auto;
+}
+.box-booking-3.listOptions-wrapper .options-item {
+  display: flex;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  border-bottom: 1px solid #8a8787;
+}
+.box-booking-3.listOptions-wrapper .options-item:last-child {
+  border-bottom: none;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-descriptions {
+  flex: 2;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-descriptions .title {
+  font-family: "Raleway";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 12px;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-descriptions .content {
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-price {
+  flex: 1;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #333333;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-price span.unit {
+  font-family: Playfair Display;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #333333;
+  text-align: right;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-price span.note {
+  font-family: Playfair Display;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #666666;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-btn button {
+  padding: 16px 48px;
+  background: #efeeea;
+  color: #5c4136;
+  border: 2px solid #efeeea;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  background: #0f0d0c;
+  color: #fff;
+  border-color: #0f0d0c;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-btn button:hover {
+  border: 2px solid #efeeea;
+  background: #685a58;
+  color: #efeeea;
+}
+.box-booking-3.listOptions-wrapper .options-item .options-btn button.active {
+  border: 2px solid #9d8d87;
+  background: #9d8d87;
+  color: #332925;
+}
+
+@media (max-width: 1024px) {
+  .box-booking-3.listOptions-wrapper .options-item {
+    flex-wrap: wrap;
+  }
+  .box-booking-3.listOptions-wrapper .options-item .options-descriptions {
+    min-width: 100%;
+    padding: 15px;
+  }
+  .box-booking-3.listOptions-wrapper .options-item .options-descriptions .title {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .box-booking-3.listOptions-wrapper .options-item .options-descriptions .content {
+    font-family: "Raleway";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .box-booking-3.listOptions-wrapper .options-item .options-price {
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 15px;
+  }
+  .box-booking-3.listOptions-wrapper .options-item .options-price span.unit {
+    text-align: inherit;
+    font-family: "Playfair Display";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .box-booking-3.listOptions-wrapper .options-item .options-price span.note {
+    text-align: inherit;
+    font-family: "Playfair Display";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .box-booking-3.listOptions-wrapper .options-item .options-btn {
+    padding-right: 15px;
+  }
+  .box-booking-3.listOptions-wrapper .options-item .options-btn button {
+    padding: 12px 32.5px;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=box-booking-3.css.map */

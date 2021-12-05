@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Lampor</title>
+	<link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+	<link rel="stylesheet" href="../../library/swiper-bundle/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../css/base.css"/>
+	<link rel="stylesheet" href="../../css/index.css" />
+	<link rel="stylesheet" href="../../css/btn.css"/>
+	<link rel="stylesheet" href="../../css/component/header/header-1.css" />
+	<link rel="stylesheet" href="../../css/component/footer/footer-1.css" />
+	<link rel="stylesheet" href="about.css" />
+</head>
+<body>
+	<!-- Header -->
+	<header class="pc" id="navbar">
+		<div class="container-xl custom">
+			<div class="row no-gutters">
+				<div class="col-lg-3 col-6">
+					<div class="logo">
+						<a href="../home/home.html" id="logo">
+							<img src="../../asset/images/header/logo_lampor_1.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="menu-right col-lg-6">
+					<ul class="list">
+							<li class="item" id="menu-item"><a href="../home/home.html"><span>Overview</span></a></li>
+							<li class="item" id="menu-item"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+							<li class="item active" id="menu-item"><a href="../amenities/amenities.html">Services & Amenities</a></li>
+							<li class="item" id="menu-item"><a href="../offer/offer.html">Offers</a></li>
+					</ul>
+				</div>	
+				<div class="menu-left col-lg-3 col-6">
+					<div class="action-wrapper">
+							<div class="icon place">
+								<a href="../location/location.html"><img src="../../asset/images/_others/location-d.png" alt=""></a>
+							</div>
+							<div class="line-between"></div>
+							<div class="icon account">
+								<a href="../login/login_1.html"><img src="../../asset/images/_others/account-d.png" alt=""></a>
+							</div>
+							<div class="btn-1 btn-g">
+								<a href="../booking/booking_1.html"><button>Booking</button></a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="mobile">
+		<div class="container-xl">
+			<div class="wrapbar">
+				<div class="wrapcol1">
+					<div class="menuHamburger" onclick="openNav()">
+						<div class="bar-1"></div>
+						<div class="bar-2"></div>
+						<div class="bar-3"></div>
+					</div>
+				</div>
+				<div class="wrapcol2">
+					<div class="logo">
+						<a href="../home/home.html"><img src="../../asset/images/header/logo_lp.png" alt=""></a>
+					</div>
+				</div>
+				<div class="wrapcol3">
+					<div class="btn-wrap">
+						<a href="../booking/booking.html"><button>Booking</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<nav id="myNav" class="overlay">
+			<div class="close-btn">
+				 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			</div>
+			<div class="overlay-content">
+				<ul class="list">
+					<li class="item"><a href="../home/home.html">Overview</a></li>
+					<li class="item"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+					<li class="item active"><a href="../amenities/amenities.html">Services & Amenities</a></li>
+					<li class="item"><a href="../offer/offer.html">Offers</a></li>
+					<li class="item"><a href="../location/location.html">Location</a></li>
+					<li class="item"><a href="../account/account.html">My Account</a></li>
+				</ul>
+				<ul class="signin-up">
+					<li class="item signin"><a href="../login/login_1.html">Sign in</a></li>
+					<li class="line"></li>
+					<li class="item signup"><a href="../register/register_1.html">Register</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- End Header -->
+	
+
+	<!-- heading text -->
+	<section class="heading-text">
+		<div class="container-xl">
+			<div class="heading-sub">
+				<div class="rl-sub1">HOTEL LAMPOR</div>
+			</div>
+			<div class="heading-title">
+				<div class="pd-heading3">ABOUT US</div>
+			</div>
+			<div class="heading-caption col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+				<div class="rl-body2">Discover Lampor hotel with the most preferential and safe services. All 152 rooms at Lampor Hotel are a combination of Asian and European architectural space, bringing elegance, luxury and relaxation with panoramic views of Singapore city.</div>
+			</div>
+			<div class="col-lg-10 offset-lg-1">
+				<div class="banner-img">
+					<img src="../../asset/images/about-us/banner1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end heading text -->
+
+	<!-- detail -->
+	<section class="detail">
+		<div class="container-xl">
+			<div class="hotel-des col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+				<div class="rl-body1">Located on one of Singapore central arterial roads, set along a tree-lined boulevard within Singapore’s main shopping, business and entertainment district, Lampor Hotel is an ideal destination for both business and leisure travelers. As the one of international standard hotels of Singapore, we put you right in the heart of prime dining, shopping and exploration. Stop in for breakfast beneath a custom Lasvit chandelier, or take in the city at your own pace – starting with views from the wall-to-wall windows in your suite.</div>
+			</div>
+			<div class="share">
+				<div class="about-logo-box">
+		            <div class="ct-logo rl-sub2">SHARE WITH</div>
+		            <div class="icon-social">
+		              <a href=""><img src="../../asset/Icon_logo/Facebook.png" alt=""></a>
+		              <a href=""><img src="../../asset/Icon_logo/Twitter.png" alt=""></a>
+		              <a href=""><img src="../../asset/Icon_logo/Insta.png" alt=""></a>
+		            </div>
+		        </div>
+		    </div>
+			<div class="detail-item ourStory">
+				<div class="row">
+					<div class="col-lg-4 offset-lg-2 col-md-5">
+						<div class="item-content">
+							<div class="item-title">
+								<div class="rl-heading4">OUR STORY</div>
+							</div>
+							<div class="item-body">
+								<div class="rl-body1">At Hotel Lampor, we believe in recognizing a familiar face, welcoming a new one we don't see by the way we want to be treated ourselves. Whether you work with us, stay with us, live with us, or explore with us, we believe that the ultimate aim is to make an impression that will stay with you for a lifetime. It comes from our belief that life is richer when we truly connect with people and the world around us.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 offset-lg-1 col-md-6 offset-md-1">
+						<div class="item-img"><img src="../../asset/images/about-us/story.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+			<div class="detail-item ourStory_pc">
+				<div class="row">
+					<div class="col-lg-3 offset-lg-2 col-md-6">
+						<div class="item-img"><img src="../../asset/images/about-us/MISSION.jpg" alt=""></div>
+					</div>
+					<div class="col-lg-4 offset-lg-1 col-md-5 offset-md-1">
+						<div class="item-content">
+							<div class="item-title">
+								<div class="rl-heading4">OUR MISSION</div>
+							</div>
+							<div class="item-body">
+								<div class="rl-body1">Bringing you the best service based on dedicated service, taking care of each meal and sleep, helping you relax with spa services, taking you on a panoramic tour of singapore through the perspective of your room. you or by our moving service.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="detail-item ourStory_mobi">
+				<div class="row">
+					<div class="col-lg-4 offset-lg-1 col-md-5">
+						<div class="item-content">
+							<div class="item-title">
+								<div class="rl-heading4">OUR MISSION</div>
+							</div>
+							<div class="item-body">
+								<div class="rl-body1">Bringing you the best service based on dedicated service, taking care of each meal and sleep, helping you relax with spa services, taking you on a panoramic tour of singapore through the perspective of your room. you or by our moving service.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 offset-lg-2 col-md-6 offset-md-1">
+						<div class="item-img"><img src="../../asset/images/about-us/MISSION.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- detail -->
+
+
+	<!-- team intro -->
+	<section class="team-intro">
+		<div class="container-xl">
+			<div class="intro-block">
+				<div class="intro-headingtext">
+					<div class="rl-heading4">MEET OUR TEAM</div>
+				</div>
+				<div class="chef-intro chef1">
+					<div class="row">
+						<div class="col-lg-4 offset-lg-2 col-md-5">
+							<div class="chef-introContent">
+								<div class="chef-name"><div class="rl-heading6-active">MR. PHILIPPE QUERE</div></div>
+								<div class="sub-name"><div class="rl-body2">HOTEL MANAGER</div></div>
+								<div class="line5"></div>
+								<div class="chef-quote">
+									<div class="pd-body">“With experience and dedicated service, Lampor hotel always gives you the best service. You are always welcome here!”</div>
+								</div>
+								<div class="chef-profile">
+									<div class="rl-body2">Born and raised in Portugal, Philip began his career in 2003 as an assistant manager at the Epic Sana Algarve hotel. After holding a number of similar positions at hotels and resorts around the world, he moved to Singapore and joined the Lampor’s big family.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 offset-lg-1 col-md-6 offset-md-1">
+							<div class="chef-img">
+								<img src="../../asset/images/about-us/manager.jpg" alt="">
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="chef-intro chef2_pc">
+					<div class="row">
+						<div class="col-lg-3 offset-lg-2 col-md-6">
+							<div class="chef-img">
+								<img src="../../asset/images/dining/chef1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-4 offset-lg-1 col-md-5 offset-sm-1">
+							<div class="chef-introContent">
+								<div class="chef-name"><div class="rl-heading6-active">MR. MATHEW RICHARDS</div></div>
+								<div class="sub-name"><div class="rl-body2">EXECUTIVE CHEF</div></div>
+								<div class="line5"></div>
+								<div class="chef-quote">
+									<div class="pd-body">“My fascination passion with delicious food is constantly generating new ideas to improve it, bringing new flavors and new facets of food.”</div>
+								</div>
+								<div class="chef-profile">
+									<div class="rl-body2">With 25 years of experience, Mathew Richards have realized that every food has its own unique taste and the combination of them will be great when we cook them according to a perfect recipe. We choose organic foods for our dishes, as they are the quintessence of nature's finest, bringing original flavors to every dish.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="chef-intro chef2_mobi">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="chef-introContent">
+								<div class="chef-name"><div class="rl-heading6-active">MR. MATHEW RICHARDS</div></div>
+								<div class="sub-name"><div class="rl-body2">EXECUTIVE CHEF</div></div>
+								<div class="line5"></div>
+								<div class="chef-quote">
+									<div class="pd-body">“My fascination passion with delicious food is constantly generating new ideas to improve it, bringing new flavors and new facets of food.”</div>
+								</div>
+								<div class="chef-profile">
+									<div class="rl-body2">With 25 years of experience, Mathew Richards have realized that every food has its own unique taste and the combination of them will be great when we cook them according to a perfect recipe. We choose organic foods for our dishes, as they are the quintessence of nature's finest, bringing original flavors to every dish.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 offset-md-1">
+							<div class="chef-img">
+								<img src="../../asset/images/dining/chef1.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="chef-intro chef1">
+					<div class="row">
+						<div class="col-lg-4 offset-lg-2 col-md-5">
+							<div class="chef-introContent">
+								<div class="chef-name"><div class="rl-heading6-active">MR. PAUL HOOGWAERTS</div></div>
+								<div class="sub-name"><div class="rl-body2">EXECUTIVE PASTRY CHEF</div></div>
+								<div class="line5"></div>
+								<div class="chef-quote">
+									<div class="pd-body">“The key element makes for an outstanding dessert is texture. Every dessert should offer a balanced contrast: creamy, crunchy, weight of elements.”</div>
+								</div>
+								<div class="chef-profile">
+									<div class="rl-body2">A native of Mezzocorona in northeastern Italy, Paul is grateful to his late grandmother for sparking his  potential and inspiring him into the world of pastry.    Start with culinary memories revolving around how his grandmother made the difference to apple pie and roll and guided him when he was as young as 6 years old a long time ago. After more than ten years worked from a regular chef and becoming a main service chef at several eateries in Europe, he has realized that his greatest passion is pastry.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 offset-lg-1 col-md-6 offset-md-1">
+							<div class="chef-img">
+								<img src="../../asset/images/dining/chef2.jpg" alt="">
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end team intro -->
+
+
+
+	<!-- contact box -->
+	<section class="contact-box">
+		<div class="container-xl">
+			<div class="col-lg-10 offset-lg-1 col-md-12 offset-md-0">
+				<div class="contact-us">
+					<div class="cover-box row">
+						<div class="contentL col-lg-5 col-md-5">
+							<div class="sub-text">
+								<div class="rl-sub1">We provide all the best services</div>
+							</div>
+						</div>
+						<div class="contentR col-lg-7 col-md-7">
+							<div class="phone-number">+65 21 87600000</div>
+							<div class="btn-contact">
+								<button class="btn-3-or-f">CONTACT US</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contact box -->
+
+	<section class="safe">
+		<div class="container-xl">
+			<div class="safe-block">
+				<div class="safe-title">
+					<div class="rl-heading4">Stay safe and relax</div>
+				</div>
+				<div class="safe-body">
+					<div class="col-lg-6 offset-lg-3">
+						<div class="rl-body2">We will help you enjoy your trip safely with our special disease prevention measures. You can stay with us longer, safer and experience more of your trip. Information about the Hotel's services and facilities affected by the COVID-19 pandemic as well as a description of the Hotel's current mandatory health and safety procedures are available, you can contact the Hotel directly at +65 21 87600000. As your visit date gets closer, please check back with the Hotel for any significant changes.</div>
+					</div>
+				</div>
+				<div class="safe-img">
+					<div class="col-lg-10 offset-lg-1">
+						<img src="../../asset/images/about-us/safe.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- footer -->
+	<footer>
+		<div class="upper">
+			<div class="container-xl">
+				<div class="row">
+					<div class="col-xl-3 offset-lg-1">
+						<div class="logo">
+							<img src="../../asset/images/footer/logo-img.png" alt="">
+						</div>
+					</div>
+					<div class="logo_mobile">
+						<img src="../../asset/images/footer/logo-img.png" alt="">
+					</div>
+					<div class="col-xl-8">
+						<div class="row hidden-in-mobile">
+							<div class="col-3">
+								<div class="menu-infomations">
+									<div class="title-info">
+										INFORMATIONS
+									</div>
+									<div class="body-info">
+										<ul class="infoMenu">
+											<li class="list-info"><a href="../about/about.html">About Us</a></li>
+											<li class="list-info"><a href="../contact/contact.html">Contact Us</a></li>
+											<li class="list-info"><a href="../location/location.html">Location</a></li>
+											<li class="list-info"><a href="../offer/offer.html">Offers</a></li>
+											<li class="list-info"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+											<li class="list-info"><a href="../amenities/amenities.html">Service & Amenites</a></li>
+											<li class="list-info"><a href="../gallery/gallery.html">Gallery</a></li>
+											<li class="list-info"><a href="../term">Terms & Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="get-intouch">
+									<div class="title-info">GET IN TOUCH</div>
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard<br> 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com<br>
+										+65 21 87600000</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="subscribe">
+									<div class="text-content">
+										<p>Get the latest news and great deals in your inbox</p>
+								</div>
+								<div class="input-wrap">
+									<div class="input-box">
+										<input type="email" class="input-email" id="input-email" placeholder="Type your email">
+									</div>
+									<div class="input-btn">
+											<button type="button"onclick="document.getElementById('id02').style.display='block'">Subscribe</button>
+										</div>
+								</div>
+								<div class="download-app">
+									<a href=""><div class="dl-btn on-ios">
+										<img src="../../asset/images/footer/app-store.png" alt="">
+									</div></a>
+									<a href=""><div class="dl-btn on-android">
+										<img src="../../asset/images/footer/google.png" alt="">
+									</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="get-intouch__mobile">
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard, 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com 
+										<br>
+									+65 21 87600000</p>
+									</div>
+								</div>
+					<div class="title-info__mobile">INFORMATIONS</div>
+						<ul class="list-item__mobile">
+	                        <li><a href="../about/about.html">About Us</a></li>
+	                        <li><a href="../contact/contact.html">Contact Us</a></li>
+	                        <li><a href="../location/location.html">Location</a></li>
+	                        <li><a href="../offer/offer.html">Offers</a></li>
+	                        <li><a href="../accommodations/accommodations.html">Accommodations
+							</a></li>
+							<li><a href="../amenities/amenities.html">Service & Amenites
+							</a></li>
+							<li><a href="../gallery/gallery.html">Gallery
+							</a></li>
+							<li><a href="../term/term.html">Terms & Conditions
+							</a></li>
+				    	</ul>
+				</div>
+			</div>
+		</div>
+			<div class="social-network">
+		        <div class="social-icon hidden-in-mobile">
+		            <ul class="list-icon">
+		            	<li><a href="https://facebook.com" target="_blank"><img src="../../asset/images/footer/fb.png" alt=""></a></li>
+		            	<li><a href="https://twitter.com" target="_blank"><img src="../../asset/images/footer/tw.png" alt=""></a></li>
+		            	<li><a href="https://instargram.com" target="_blank"><img src="../../asset/images/footer/ins.png" alt=""></a></li>
+		            	<li><a href="https://youtube.com" target="_blank"><img src="../../asset/images/footer/yt.png" alt=""></a></li>
+		            </ul>
+	            </div>
+			</div>
+			<div class="container-xl">
+        		<div class="divider"></div>
+    		</div>
+		    <div class="lower">
+		        <div class="container-xl">
+                    <div class="copyright">
+                        <p>	                            
+                        	© Lampor Hotel & Residence, Inc. 2021. All Rights Reserved.
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- The Modal -->
+	<div id="id02" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialo modal-dialog-centered">
+			<form class="modal-content animate" action="/action_page.php">
+				<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<div class="popup-result">
+				<div class="img-result"><img src="../../asset/Icon_logo/stick.png" alt="">
+				</div>
+				<div class="result-sub"><div class="rl-heading6">Subscribe successfully!</div></div>
+				<div class="result-text"><div class="rl-body3">You will receive useful information from us.</div></div>
+			</div>
+			<div class="btn-done"><button type="button" onclick="document.getElementById('id02').style.display='none'" class="btn-2-gr-f">Done</button></div>
+			</form>
+		</div>
+	</div>
+	<!-- end modal -->
+
+	<!-- swiper slider -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="jquery.scrollify.js"></script>
+	<script src="../../library/swiper-bundle/swiper-bundle.min.js"></script>\
+
+	<!-- Scroll menu -->
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0.10)";
+		  } else {
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0)";
+		  }
+		}
+	</script>
+
+	<!-- modal sub -->
+	<script>
+	// Get the modal
+	var modalSub = document.getElementById('id02');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modalSub) {
+	    modalSub.style.display = "none";
+	  }
+	}
+	</script>
+</body>
+</html>

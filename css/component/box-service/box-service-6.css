@@ -1,0 +1,53 @@
+/* Color pallete */
+/* Button type */
+/* Link type */
+/* Typo */
+.box-service-6 {
+  display: flex;
+  justify-content: center;
+  margin-top: 88px;
+}
+.box-service-6 .list-menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.box-service-6 .list-menu a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #8a8787;
+  text-decoration: none;
+  transition: 0.01s;
+}
+.box-service-6 .list-menu a:hover {
+  font-weight: 700;
+  color: #685a58;
+  text-decoration: underline;
+}
+.box-service-6 .list-menu a.active {
+  font-weight: 700;
+  color: #332925;
+  text-decoration: underline;
+}
+.box-service-6 .list-menu .box-menu-1 {
+  display: flex;
+}
+.box-service-6 .list-menu .box-menu-1 .item-menu {
+  margin: 0 20px;
+}
+.box-service-6 .list-menu .box-menu-2 .item-menu {
+  margin: 0 20px;
+}
+@media (max-width: 1024px) {
+  .box-service-6 .list-menu {
+    flex-direction: column;
+  }
+  .box-service-6 .list-menu .box-menu-1 {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=box-service-6.css.map */

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Lampor</title>
+	<link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+	<link rel="stylesheet" href="../../library/swiper-bundle/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../css/base.css"/>
+	<link rel="stylesheet" href="../../css/index.css" />
+	<link rel="stylesheet" href="../../css/btn.css"/>
+	<link rel="stylesheet" href="../../css/component/header/header-1.css" />
+	<link rel="stylesheet" href="../../css/component/footer/footer-1.css" />
+	<link rel="stylesheet" href="booking_2.css" />
+</head>
+<body>
+	<!-- Header -->
+	<header class="pc" id="navbar">
+		<div class="container-xl custom">
+			<div class="row no-gutters">
+				<div class="col-lg-3 col-6">
+					<div class="logo">
+						<a href="../home/home.html" id="logo">
+							<img src="../../asset/images/header/logo_lampor_1.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="menu-right col-lg-6">
+					<ul class="list">
+							<li class="item" id="menu-item"><a href="../home/home.html"><span>Overview</span></a></li>
+							<li class="item" id="menu-item"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+							<li class="item" id="menu-item"><a href="../amenities/amenities.html">Services & Amenities</a></li>
+							<li class="item" id="menu-item"><a href="../offer/offer.html">Offers</a></li>
+					</ul>
+				</div>	
+				<div class="menu-left col-lg-3 col-6">
+					<div class="action-wrapper">
+							<div class="icon place">
+								<a href="../location/location.html"><img src="../../asset/images/_others/location-d.png" alt=""></a>
+							</div>
+							<div class="line-between"></div>
+							<div class="icon account">
+								<a href="../login/login_1.html"><img src="../../asset/images/_others/account-d.png" alt=""></a>
+							</div>
+							<div class="btn-1 btn-g">
+								<a href="../booking/booking_1.html"><button>Booking</button></a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="mobile">
+		<div class="container-xl">
+			<div class="wrapbar">
+				<div class="wrapcol1">
+					<div class="menuHamburger" onclick="openNav()">
+						<div class="bar-1"></div>
+						<div class="bar-2"></div>
+						<div class="bar-3"></div>
+					</div>
+				</div>
+				<div class="wrapcol2">
+					<div class="logo">
+						<a href="../home/home.html"><img src="../../asset/images/header/logo_lp.png" alt=""></a>
+					</div>
+				</div>
+				<div class="wrapcol3">
+					<div class="btn-wrap">
+						<a href="../booking/booking.html"><button>Booking</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<nav id="myNav" class="overlay">
+			<div class="close-btn">
+				 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			</div>
+			<div class="overlay-content">
+				<ul class="list">
+					<li class="item"><a href="../home/home.html">Overview</a></li>
+					<li class="item"><a href="../accommodations/accommodations.html">Accommodations</a></li>
+					<li class="item"><a href="../amenities/amenities.html">Services & Amenities</a></li>
+					<li class="item"><a href="../offer/offer.html">Offers</a></li>
+					<li class="item"><a href="../location/location.html">Location</a></li>
+					<li class="item"><a href="../account/account.html">My Account</a></li>
+				</ul>
+				<ul class="signin-up">
+					<li class="item signin"><a href="../login/login_1.html">Sign in</a></li>
+					<li class="line"></li>
+					<li class="item signup"><a href="../register/register_1.html">Register</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- End Header -->
+
+	<!-- Chose a package -->
+	<div class="container-xl">
+		<div class="heading-title"><div class="pd-heading5"><a href="booking_2.html"><img src="../../asset/images/_others/back.png" alt=""></a>Chose a package</div></div>
+	</div>
+	<!-- end Chose a package -->
+
+	<!-- booking -->
+	<section class="booking">
+		<div class="container-xl">
+			<div class="row">
+				<div class="blockL col-lg-7">
+					<!-- Chose a package -->
+					<!-- <div class="container-xl">
+						<div class="heading-title"><div class="pd-heading5"><a href="booking_2.html"><img src="../../asset/images/_others/back.png" alt=""></a>Chose a package</div></div>
+					</div> -->
+					<!-- end Chose a package -->
+
+					<!-- room-thumb -->
+					<div class="Thumbx">
+						<div class="roomThumb">
+							<div class="thumb-img">
+								<img src="../../asset/images/booking/room1.jpg" alt="">
+							</div>
+							<div class="thumb-contentx">
+								<div class="content-top">
+									<div class="thumb-contentL">
+										<div class="room-name"><div class="rl-heading6-active">Executive Suite</div></div>
+										<div class="room-sub rl-caption">
+											<div class="item-sub">Sleep 3</div>
+											<div class="line4"></div>
+											<div class="item-sub">1 King</div>
+											<div class="line4"></div>
+											<div class="item-sub">62m2</div>
+										</div>
+									</div>
+									<div class="thumb-contentR">
+										<div class="btn-bed">
+											<button class="btn-1 btn-king active rl-body3">King</button>
+											<button class="btn-2 btn-king rl-body3">Queen</button>
+										</div>
+									</div>
+								</div>
+								<div class="content-des">
+									<div class="room-des"><div class="rl-body3">With bounty of space to wrap up the day’s work and loosen up the living room’s chaise longue, these suites will make any business voyager feel right at home. </div></div>
+								</div>
+								<div class="content-bottom">
+									<div class="content-bottomL">
+										<div class="icon-room">
+											<ul class="icon-r">
+												<li class="icon-i"><img src="../../asset/images/_others/wifi.png" alt=""></li>
+												<li class="icon-i"><img src="../../asset/images/_others/icon-tivi.png" alt=""></li>
+												<li class="icon-i"><img src="../../asset/images/_others/icon-blue.png" alt=""></li>
+												<li class="icon-i"><img src="../../asset/images/_others/icon-light.png" alt=""></li>
+												<li class="icon-i"><img src="../../asset/images/_others/icon-air.png" alt=""></li>
+											</ul>
+										</div>
+										<div class="view-more">
+											<button type="button" class="rl-body3" onclick="document.getElementById('id03').style.display='block'">View Details</button>
+										</div>
+									</div>
+									<!-- <div class="content-bottomR">
+										<div class="form-input">
+											<div class="rl-sub2">Rooms</div>
+											<div class="input-box1"><input type="number" placeholder="1"></div>
+										</div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end room-thumb -->
+
+					<!-- room package -->
+					<div class="room-package">
+						<!-- item 1 -->
+						<div class="package-item">
+							<div class="row">
+								<div class="col-lg-6 col-sm-6">
+									<div class="package-content">
+										<div class="package-tit"><div class="rl-sub2">Surprise staycation – 30% Off with upgrade</div></div>
+										<div class="package-body"><div class="rl-body3">Discover the city's best staycation destination with 30% off our Room Rate and a complimentary upgrade to the next suite category.</div></div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="package-rate">
+										<div class="rate-info">
+									        <div class="rate-tit">
+												<div class="rl-caption">
+													from <span class="pd-heading6">$158</span>
+												</div>
+											</div>
+											<div class="fee-info">
+												<div class="rl-caption">Per Night</div>
+												<div class="rl-caption">Excluding Taxes & Fees</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="btn-select"><button class="btn-5-gr-f">Select</button></div>
+								</div>
+							</div>
+						</div>
+						<div class="line-between"></div>
+						<!-- item 2 -->
+						<div class="package-item">
+							<div class="row">
+								<div class="col-lg-6 col-sm-6">
+									<div class="package-content">
+										<div class="package-tit"><div class="rl-sub2">Advance purchase – up to 25% Off</div></div>
+										<div class="package-body"><div class="rl-body3">Enjoy up to 25% off our Room Rate when you book your stay in advance.</div></div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="package-rate">
+										<div class="rate-info">
+									        <div class="rate-tit">
+												<div class="rl-caption">
+													from <span class="pd-heading6">$169</span>
+												</div>
+											</div>
+											<div class="fee-info">
+												<div class="rl-caption">Per Night</div>
+												<div class="rl-caption">Excluding Taxes & Fees</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="btn-select"><button class="btn-5-gr-f">Select</button></div>
+								</div>
+							</div>
+						</div>
+						<div class="line-between"></div>
+						<!-- item 3 -->
+						<div class="package-item">
+							<div class="row">
+								<div class="col-lg-6 col-sm-6">
+									<div class="package-content">
+										<div class="package-tit"><div class="rl-sub2">Stay safe and relax - 20% Off</div></div>
+										<div class="package-body"><div class="rl-body3">Your relaxing retreat includes 20% off our Room Rate, daily breakfast and more – along with stunning views from your suite.</div></div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="package-rate">
+										<div class="rate-info">
+									        <div class="rate-tit">
+												<div class="rl-caption">
+													from <span class="pd-heading6">$180</span>
+												</div>
+											</div>
+											<div class="fee-info">
+												<div class="rl-caption">Per Night</div>
+												<div class="rl-caption">Excluding Taxes & Fees</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="btn-select"><button class="btn-5-gr-f">Select</button></div>
+								</div>
+							</div>
+						</div>
+						<div class="line-between"></div>
+						<!-- item 4 -->
+						<div class="package-item">
+							<div class="row">
+								<div class="col-lg-6 col-sm-6">
+									<div class="package-content">
+										<div class="package-tit"><div class="rl-sub2">Standard Daily Rate</div></div>
+										<div class="package-body"><div class="rl-body3">Best available room rate. Our most flexible option.</div></div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="package-rate">
+										<div class="rate-info">
+									        <div class="rate-tit">
+												<div class="rl-caption">
+													from <span class="pd-heading6">$180</span>
+												</div>
+											</div>
+											<div class="fee-info">
+												<div class="rl-caption">Per Night</div>
+												<div class="rl-caption">Excluding Taxes & Fees</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="btn-select"><button class="btn-5-gr-f">Select</button></div>
+								</div>
+							</div>
+						</div>
+						<div class="line-between"></div>
+						<!-- item 5 -->
+						<div class="package-item">
+							<div class="row">
+								<div class="col-lg-6 col-sm-6">
+									<div class="package-content">
+										<div class="package-tit"><div class="rl-sub2">Breakfast in Singapore</div></div>
+										<div class="package-body"><div class="rl-body3">Enjoy a staycation in our lush sanctuary, including daily breakfast</div></div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="package-rate">
+										<div class="rate-info">
+									        <div class="rate-tit">
+												<div class="rl-caption">
+													from <span class="pd-heading6">$225</span>
+												</div>
+											</div>
+											<div class="fee-info">
+												<div class="rl-caption">Per Night</div>
+												<div class="rl-caption">Excluding Taxes & Fees</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="btn-select"><button class="btn-5-gr-f">Select</button></div>
+								</div>
+							</div>
+						</div>
+						<div class="line-between"></div>
+						<!-- item 6 -->
+						<div class="package-item">
+							<div class="row">
+								<div class="col-lg-6 col-sm-6">
+									<div class="package-content">
+										<div class="package-tit"><div class="rl-sub2">Breakfast and dinner - 12% Off</div></div>
+										<div class="package-body"><div class="rl-body3">Savour a delicious breakfast and three-course dinner with each night of your stay, as well as evening cocktails.</div></div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="package-rate">
+										<div class="rate-info">
+									        <div class="rate-tit">
+												<div class="rl-caption">
+													from <span class="pd-heading6">$278</span>
+												</div>
+											</div>
+											<div class="fee-info">
+												<div class="rl-caption">Per Night</div>
+												<div class="rl-caption">Excluding Taxes & Fees</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="btn-select"><button class="btn-5-gr-f">Select</button></div>
+								</div>
+							</div>
+						</div>
+						<div class="line-between"></div>
+						<!-- item 7 -->
+						<div class="package-item">
+							<div class="row">
+								<div class="col-lg-6 col-sm-6">
+									<div class="package-content">
+										<div class="package-tit"><div class="rl-sub2">Extra experience</div></div>
+										<div class="package-body"><div class="rl-body3">Enjoy a Hotel credit of up to USD 350 per stay towards spa treatments and dining.</div></div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="package-rate">
+										<div class="rate-info">
+									        <div class="rate-tit">
+												<div class="rl-caption">
+													from <span class="pd-heading6">$305</span>
+												</div>
+											</div>
+											<div class="fee-info">
+												<div class="rl-caption">Per Night</div>
+												<div class="rl-caption">Excluding Taxes & Fees</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-3">
+									<div class="btn-select"><button class="btn-5-gr-f">Select</button></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end room package -->
+				</div>
+				<div class="blockR col-lg-4 offset-lg-1" id="blockR">
+					<div class="your-stay">
+						<div class="title-text"><div class="rl-heading6">Your Stay</div></div>
+						<div class="check-time">
+							<div class="check-in">
+								<div class="checkin-sub"><div class="rl-sub2">Check-in time</div></div>
+								<div class="checkin-date"><div class="rl-body2">After 3:00 PM </div></div>
+							</div>
+							<div class="check-out">
+								<div class="checkin-sub"><div class="rl-sub2">Check-out time</div></div>
+								<div class="checkin-date"><div class="rl-body2">Before 12:00 PM</div></div>
+							</div>
+						</div>
+						<div class="stay-info">
+							<div class="room-guest">
+								<div class="rl-body2">Dec 23rd, 2021 - Dec 29th, 2021  </div>
+								<div class="rl-body2">2 Guests</div>
+							</div>
+							<div class="btn-change"><a href="booking_1.html" class="rl-sub3">Change</a></div>
+						</div>
+						<div class="tax-fee">
+							<div class="text-tax">
+								<div class="title-tax"><div class="rl-sub2">Taxes and Fees</div></div>
+								<div class="num-tax"><div class="pd-sub2">$0</div></div>
+							</div>
+						</div>
+						<div class="line-btw"></div>
+						<div class="total">
+							<div class="title-total"><div class="rl-sub2">Total:</div></div>
+							<div class="num-total"><div class="pd-sub2">$0</div></div>
+						</div>
+						<div class="btn-bookNow"><button class="btn-2-or-f btn-disable">Book now</button></div>
+					</div>
+					<div class="your-stay_active">
+						<div class="title-text"><div class="rl-heading6">Your Stay</div></div>
+						<div class="check-time">
+							<div class="check-in">
+								<div class="checkin-sub"><div class="rl-sub2">Check-in time</div></div>
+								<div class="checkin-date"><div class="rl-body2">After 3:00 PM </div></div>
+							</div>
+							<div class="check-out">
+								<div class="checkin-sub"><div class="rl-sub2">Check-out time</div></div>
+								<div class="checkin-date"><div class="rl-body2">Before 12:00 PM</div></div>
+							</div>
+						</div>
+						<div class="stay-info">
+							<div class="room-guest">
+								<div class="rl-body2">Dec 23rd, 2021 - Dec 29th, 2021  </div>
+								<div class="rl-body2">2 Guests</div>
+							</div>
+							<div class="btn-change"><a href="booking_1.html" class="rl-sub3">Change</a></div>
+						</div>
+						<div class="room-select">
+							<div class="room-info">
+								<div class="room-name"><div class="rl-body1">Executive Suite - King</div></div>
+								<div class="select-package"><div class="rl-body3">Stay safe and relax - 20% Off</div></div>
+								<div class="number-night"><div class="rl-caption">5 nights</div></div>
+							</div>
+							<div class="room-price"><div class="pd-sub2">$900</div></div>
+						</div>
+						<div class="tax-fee">
+							<div class="text-tax">
+								<div class="title-tax"><div class="rl-sub2">Taxes and Fees</div></div>
+								<div class="num-tax"><div class="pd-sub2">$160</div></div>
+							</div>
+						</div>
+						<div class="line-btw"></div>
+						<div class="total">
+							<div class="title-total"><div class="rl-sub2">Total:</div></div>
+							<div class="num-total"><div class="pd-sub2">$1060</div></div>
+						</div>
+						<div class="btn-bookNow"><a href="booking_4.html"><button class="btn-2-or-f">Book now</button></a></div>
+					</div>
+					<div class="service-charge">
+						<div class="charge-title"><div class="rl-sub2">Service Charge</div></div>
+						<div class="charge-text"><div class="rl-body3">Service Charge of 10% of room rate (plus applicable taxes) will be applied to all reservations. This charge is in addition to the room rate per night. This charge is intended to cover a portion of costs associated with our employees.</div></div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- end package -->
+
+	<!-- note -->
+	<section>
+		<div class="container-xl">
+			<div class="note-x">
+				<div class="col-lg-8 offset-lg-2 col-md-8 col-md-2">
+					<div class="note-sub rl-sub2">PLEASE NOTE*</div> 
+					<div class="note-text rl-body2">All offers are subject to availability at the time of reservation. Offers are not substantial in conjunction with any other offer or contract and don't apply to groups. Rates are per room, per night, change by entry date and/or length of stay, and don't incorporate pertinent required property fees (for case resort expenses or benefit charges), tips, or government forced charges, benefit charges, demands or extra charges, unless something else noted. Early departure fees may apply. Rates are subject to change.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end note -->
+	<!-- The Modal Room-->
+	<div id="id03" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialo modal-dialog-centered">
+			<form class="modal-content animate" action="/action_page.php">
+				<span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<div class="popup-room">
+				<div class="roomBlock">
+					<div class="room-tit"><div class="rl-heading4">Executive Suite Details</div></div>
+					<div class="img-room">
+						<div class="slider">
+							<div class="img-slide swiper-container">
+								<div class="swiper-wrapper">
+									<div class="img-thumb swiper-slide"><img src="../../asset/images/booking/image1.jpg" alt=""></div>
+									<div class="img-thumb swiper-slide"><img src="../../asset/images/booking/image2.jpg" alt=""></div>
+									<div class="img-thumb swiper-slide"><img src="../../asset/images/booking/image3.jpg" alt=""></div>
+									<div class="img-thumb swiper-slide"><img src="../../asset/images/booking/image4.jpg" alt=""></div>
+									<div class="img-thumb swiper-slide"><img src="../../asset/images/booking/image5.jpg" alt=""></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+					<div class="room-detail">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="detail-item">
+									<div class="item-sub rl-sub1">BEDS</div>
+									<div class="item-body rl-body1">One king bed<br>Two rollaways or two cribs.</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="detail-item">
+									<div class="item-sub rl-sub1">SIZE</div>
+									<div class="item-body rl-body1">62 m2 (667 sq. ft.). 6th – 15th floors; room layout may vary depending on location</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="detail-item">
+									<div class="item-sub rl-sub1">OCCUPANCY</div>
+									<div class="item-body rl-body1">3 adults, or 2 adults and 1 child</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="detail-item">
+									<div class="item-sub rl-sub1">VIEWS</div>
+									<div class="item-body rl-body1">Residential view</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="detail-item">
+									<div class="item-sub rl-sub1">BATHROOM</div>
+									<div class="item-body rl-body1">One full marble bathroom, plus shower room adjacent to the living area</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="detail-item">
+									<div class="item-sub rl-sub1">UNIQUE FEATURES</div>
+									<div class="item-body rl-body1">Design by Alexandra Champalimaud and large working desk</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-done"><button type="button" onclick="document.getElementById('id03').style.display='none'" class="btn-2-gr-b">Close</button></div>
+			</form>
+		</div>
+	</div>
+	<!-- end modal -->
+
+	<!-- footer -->
+	<footer>
+		<div class="upper">
+			<div class="container-xl">
+				<div class="row">
+					<div class="col-xl-3 offset-lg-1">
+						<div class="logo">
+							<img src="../../asset/images/footer/logo-img.png" alt="">
+						</div>
+					</div>
+					<div class="logo_mobile">
+						<img src="../../asset/images/footer/logo-img.png" alt="">
+					</div>
+					<div class="col-xl-8">
+						<div class="row hidden-in-mobile">
+							<div class="col-3">
+								<div class="menu-infomations">
+									<div class="title-info">
+										INFORMATIONS
+									</div>
+									<div class="body-info">
+										<ul class="infoMenu">
+											<li class="list-info"><a href="#">About Us</a></li>
+											<li class="list-info"><a href="#">Contact Us</a></li>
+											<li class="list-info"><a href="#">Location</a></li>
+											<li class="list-info"><a href="#">Offers</a></li>
+											<li class="list-info"><a href="#">Accommodations</a></li>
+											<li class="list-info"><a href="">Service & Amenites</a></li>
+											<li class="list-info"><a href="">Gallery</a></li>
+											<li class="list-info"><a href="">Terms & Conditions</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="get-intouch">
+									<div class="title-info">GET IN TOUCH</div>
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard<br> 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com<br>
+										+65 21 87600000</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="subscribe">
+									<div class="text-content">
+										<p>Get the latest news and great deals in your inbox</p>
+								</div>
+								<div class="input-wrap">
+									<div class="input-box">
+										<input type="email" class="input-email" id="input-email" placeholder="Type your email">
+									</div>
+									<div class="input-btn">
+											<button>Subscribe</button>
+										</div>
+								</div>
+								<div class="download-app">
+									<a href=""><div class="dl-btn on-ios">
+										<img src="../../asset/images/footer/app-store.png" alt="">
+									</div></a>
+									<a href=""><div class="dl-btn on-android">
+										<img src="../../asset/images/footer/google.png" alt="">
+									</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="get-intouch__mobile">
+									<div class="hotel-adress">
+										<p>121 Orchard Boulevard, 
+										248646 Singapore</p>
+									</div>
+									<div class="hotel-contact">
+										<p>info@lamporhotel.com 
+										<br>
+									+65 21 87600000</p>
+									</div>
+								</div>
+					<div class="title-info__mobile">INFORMATIONS</div>
+						<ul class="list-item__mobile">
+	                        <li><a href="">About Us</a></li>
+	                        <li><a href="">Contact Us</a></li>
+	                        <li><a href="">Location</a></li>
+	                        <li><a href="">Offers</a></li>
+	                        <li><a href="">Accommodations
+							</a></li>
+							<li><a href="">Service & Amenites
+							</a></li>
+							<li><a href="">Gallery
+							</a></li>
+							<li><a href="">Terms & Conditions
+							</a></li>
+				    	</ul>
+				</div>
+			</div>
+		</div>
+			<div class="social-network">
+		        <div class="social-icon hidden-in-mobile">
+		            <ul class="list-icon">
+		            	<li><a href=""><img src="../../asset/images/footer/fb.png" alt=""></a></li>
+		            	<li><a href=""><img src="../../asset/images/footer/tw.png" alt=""></a></li>
+		            	<li><a href=""><img src="../../asset/images/footer/ins.png" alt=""></a></li>
+		            	<li><a href=""><img src="../../asset/images/footer/yt.png" alt=""></a></li>
+		            </ul>
+	            </div>
+			</div>
+			<div class="container-xl">
+        		<div class="divider"></div>
+    		</div>
+		    <div class="lower">
+		        <div class="container-xl">
+                    <div class="copyright">
+                        <p>	                            
+                        	© Lampor Hotel & Residence, Inc. 2021. All Rights Reserved.
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- The Modal -->
+	<div id="id02" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialo modal-dialog-centered">
+			<form class="modal-content animate" action="/action_page.php">
+				<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<div class="popup-result">
+				<div class="img-result"><img src="../../asset/Icon_logo/stick.png" alt="">
+				</div>
+				<div class="result-sub"><div class="rl-heading6">Subscribe successfully!</div></div>
+				<div class="result-text"><div class="rl-body3">You will receive useful information from us.</div></div>
+			</div>
+			<div class="btn-done"><button type="button" onclick="document.getElementById('id02').style.display='none'" class="btn-2-gr-f">Done</button></div>
+			</form>
+		</div>
+	</div>
+	<!-- end modal -->
+	<!-- swiper slider -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="jquery.scrollify.js"></script>
+	<script src="../../library/swiper-bundle/swiper-bundle.min.js"></script>\
+
+	<!-- Scroll menu -->
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0.10)";
+		  } else {
+		    document.getElementById("navbar").style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0)";
+		  }
+		}
+	</script>
+
+	<script>
+	// Get the modal
+	var modalSub = document.getElementById('id02');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modalSub) {
+	    modalSub.style.display = "none";
+	  }
+	}
+	</script>
+	<script>
+	// Get the modal
+	var modalRoom = document.getElementById('id03');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modalRoom) {
+	    modalRoom.style.display = "none";
+	  }
+	}
+	</script>
+	<script>
+		/* Open */
+		function openNav() {
+		  document.getElementById("myNav").style.height = "100%";
+		}
+
+		/* Close */
+		function closeNav() {
+		  document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
+	<script>
+		$( ".btn-select" ).click(function() {
+		  $( ".your-stay_active" ).toggleClass( "active" );
+		  $(".your-stay").toggleClass("disable");
+		});
+	</script>
+	<script>
+		$( ".btn-1" ).click(function() {
+		  $( ".btn-1" ).addClass( "active" );
+		  $(".btn-2").removeClass("active");
+		});
+	</script>
+	<script>
+		$( ".btn-2" ).click(function() {
+		  $( ".btn-2" ).addClass( "active" );
+		  $(".btn-1").removeClass("active");
+		});
+	</script>
+	<!-- swiper slider -->
+	<script src="../../library/swiper-bundle/swiper-bundle.min.js"></script>
+	<script>
+      var swiper = new Swiper(".img-slide", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        slidesPerGroup: 2,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+	        slidesPerGroup: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+            slidesPerGroup: 2,
+          },
+        },
+      });
+    </script>
+</body>
+</html>

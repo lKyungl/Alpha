@@ -1,0 +1,178 @@
+/* Color pallete */
+/* Button type */
+/* Link type */
+/* Typo */
+.box-service-2 {
+  color: #f2f1f1;
+  background: #0f0d0c;
+}
+.box-service-2 .row {
+  display: flex;
+  justify-content: center;
+}
+.box-service-2 .row .title-meet-mobile {
+  font-family: "Playfair Display";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f0d0c;
+  text-align: center;
+  color: #ffffff;
+  display: none;
+}
+.box-service-2 .row .meeting-text {
+  margin-top: 140px;
+  margin-left: 80px;
+  color: #f2f1f1;
+}
+.box-service-2 .row .meeting-text .title-meeting {
+  font-family: "Playfair Display";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f0d0c;
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.box-service-2 .row .meeting-text .describe-meeting {
+  font-family: "Raleway";
+  color: inherit;
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+.box-service-2 .row .meeting-text .button-meeting {
+  margin-bottom: 30px;
+}
+.box-service-2 .row .meeting-text .button-meeting button {
+  padding: 24px 48px;
+  border: 2px solid #f2f1f1;
+  background: #f2f1f1;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5c4136;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  padding: 24px 70px;
+}
+.box-service-2 .row .meeting-text .button-meeting button:hover {
+  border-color: #efeeea;
+  background: #685a58;
+  color: #dfdbdc;
+}
+.box-service-2 .row .meeting-text .button-meeting button.active {
+  border: 2px solid #9d8d87;
+  background: #9d8d87;
+  color: #332925;
+}
+.box-service-2 .row .meeting-img {
+  padding: 80px;
+}
+.box-service-2 .row .meeting-img img {
+  width: 100%;
+}
+@media (max-width: 1463px) {
+  .box-service-2 .row .meeting-img {
+    padding: 50px;
+  }
+}
+.box-service-2 .row .button-img {
+  display: none;
+  margin-bottom: 196px;
+}
+.box-service-2 .row .button-img button {
+  padding: 24px 48px;
+  border: 2px solid #f2f1f1;
+  background: #f2f1f1;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5c4136;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  padding: 16x 48px;
+}
+.box-service-2 .row .button-img button:hover {
+  border-color: #efeeea;
+  background: #685a58;
+  color: #dfdbdc;
+}
+.box-service-2 .row .button-img button.active {
+  border: 2px solid #9d8d87;
+  background: #9d8d87;
+  color: #332925;
+}
+@media (max-width: 1463px) {
+  .box-service-2 .row {
+    margin: 0;
+  }
+  .box-service-2 .row .meeting-text {
+    margin-top: 70px;
+  }
+  .box-service-2 .row .meeting-text .title-meeting {
+    display: none;
+  }
+  .box-service-2 .row .title-meet-mobile {
+    display: block;
+    margin-top: 64px;
+  }
+}
+@media (max-width: 992px) {
+  .box-service-2 .row {
+    margin: 0;
+    display: flex;
+  }
+  .box-service-2 .row .meeting-text {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-service-2 .row .meeting-text .title-meeting {
+    line-height: 36px;
+    font-size: 24px;
+    margin: 0 50px;
+    display: block;
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 32px;
+  }
+  .box-service-2 .row .meeting-text .describe-meeting {
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0 16px 24px;
+  }
+  .box-service-2 .row .meeting-text .button-meeting {
+    display: none;
+  }
+  .box-service-2 .row .meeting-img {
+    padding: 0 20px;
+    margin-bottom: 48px;
+  }
+  .box-service-2 .row .title-meet-mobile {
+    display: none;
+  }
+  .box-service-2 .row .button-img {
+    display: block;
+    text-align: center;
+    margin-bottom: 96px;
+  }
+  .box-service-2 .row .button-img button {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=box-service-2.css.map */

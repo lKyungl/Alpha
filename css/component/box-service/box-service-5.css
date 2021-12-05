@@ -1,0 +1,63 @@
+/* Color pallete */
+/* Button type */
+/* Link type */
+/* Typo */
+.box-service-5 .row {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.box-service-5 .row .wrap-food {
+  display: flex;
+}
+.box-service-5 .row .wrap-food .img-food {
+  margin: 10px;
+}
+.box-service-5 .row .wrap-food .img-food img {
+  width: 100%;
+}
+.box-service-5 .row .wrap-food .intro-food {
+  margin: 10px;
+}
+.box-service-5 .row .wrap-food .intro-food .title-food {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.box-service-5 .row .wrap-food .intro-food .describe-food {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 48px;
+}
+.box-service-5 .row .wrap-food .intro-food .line {
+  width: 132px;
+  height: 1px;
+  background: #8a8787;
+}
+@media (max-width: 1024px) {
+  .box-service-5 .row .wrap-food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-service-5 .row .wrap-food .img-food {
+    margin-bottom: 32px;
+  }
+  .box-service-5 .row .wrap-food .intro-food .title-food {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .box-service-5 .row .wrap-food .intro-food .describe-food {
+    margin-bottom: 50px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .box-service-5 .row .wrap-food .intro-food .line {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=box-service-5.css.map */

@@ -1,0 +1,197 @@
+.heading-text {
+	text-align: center;
+	width: 100%;
+}
+.heading-sub {color: #333; margin-top: 96px; margin-bottom: 4px;}
+.heading-title {color: #04494a; margin-bottom: 96px;}
+.banner-img {margin-top: 40px;}
+.banner-img img {width: 100%;}
+@media (max-width: 1023px) {
+  .heading-sub {margin-top: 56px;}
+  .heading-title {margin-bottom: 40px;}
+  .banner-img {margin-top: 32px; height: 320px;}
+  .banner-img img {height: 100%; object-fit: cover;}
+}
+
+section.detail .hotel-des {
+	text-align: center;
+	color: #333;
+	margin-top: 120px;
+	margin-bottom: 56px;
+}
+section.detail .share {
+	text-align: center;
+	color: #333;
+	margin-bottom: 144px;
+}
+section.detail .ct-logo {
+	margin-bottom: 20px;
+}
+section.detail .share a {
+	width: 32px;
+	opacity: 0.6;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+section.detail .share a:hover {
+	opacity: 1;
+}
+section.detail .share a img {
+}
+section.detail .ourStory {
+	margin-bottom: 136px;
+}
+
+section.detail .detail-item .row {
+	align-items: center;
+}
+
+section.detail .item-title {
+	margin-bottom: 16px;
+	color: #04494a;
+}
+section.detail .item-body {
+	color: #333;
+}
+
+section.detail .detail-item img,
+.safe-img img {width: 100%;}
+section.detail .ourStory_mobi {display: none;}
+
+@media (max-width: 1023px) {
+	section.detail .hotel-des {
+		text-align: center;
+		color: #333;
+		margin-top: 64px;
+		margin-bottom: 40px;
+	}
+	section.detail .share {
+		text-align: center;
+		color: #333;
+		margin-bottom: 64px;
+	}
+	section.detail .ct-logo {
+		margin-bottom: 12px;
+	}
+	section.detail .share a {
+		width: 28px;
+		opacity: 0.6;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+
+	section.detail .share a img {
+		width: 28px;
+	}
+	section.detail .ourStory {
+		margin-bottom: 64px;
+	}
+
+	section.detail .item-title {
+		margin-bottom: 32px;
+		text-align: center;
+	}
+	section.detail .item-body {
+		margin-bottom: 24px;
+	}
+}
+
+
+section.team-intro .chef2_mobi {display: none;}
+.chef-intro .row {align-items: center;}
+
+
+section.footer-above .above-img__pc img {
+  width: 100%;
+}
+
+section.team-intro .intro-headingtext {
+  margin-top: 144px;
+  width: 100%;
+  text-align: center;
+  color: #04494a;
+  margin-bottom: 96px;
+}
+
+
+section .chef-intro .row {
+  align-items: center;
+}
+
+section .chef-intro {margin-bottom: 136px;}
+
+
+section .chef-introContent .line5 {
+  width: 132px;
+  border-bottom: 0.5px solid #888;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+section .chef-introContent .chef-name {
+  margin-bottom: 4px;
+}
+ 
+section .chef-introContent .chef-quote {
+  margin-bottom: 8px;
+}
+
+section .chef-img img {
+  width: 100%;
+}
+
+section.safe .safe-title {
+	text-align: center;
+	color: #04494a;
+	margin-bottom: 56px;
+}
+section.safe .safe-body {color: #333; margin-bottom: 80px;}
+
+@media (max-width: 767.9px) {
+	section.detail .ourStory_mobi {display: block;}
+  section.team-intro .chef2_mobi {display: block;}
+  section.team-intro .chef2_pc,
+  section.detail .ourStory_pc {display: none;}
+  section.team-intro .chef-intro,
+  section.detail,
+  section.safe,
+  .heading-caption {
+    max-width: 480px;
+    margin: 40px auto; 
+  }
+  section.team-intro .intro-headingtext {
+    margin-top: 96px;
+    margin-bottom: 0px;
+  }
+
+  section .chef-introContent .line5 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  section .chef-introContent {
+    margin-bottom: 24px
+  }
+  section .chef-introContent .chef-name {
+    margin-bottom: 4px;
+  }
+   
+  section .chef-introContent .chef-quote {
+    margin-bottom: 8px;
+  }
+  section .chef-introContent .chef-profile {
+    margin-bottom: 24px;
+  }
+  section .chef-img {
+  	margin-bottom: 24px;
+  }
+  section .chef-img img {
+    width: 100%;
+    height: 400px;
+    object-position: 80% 5%;
+  }
+  section.safe .safe-title {
+	margin-bottom: 32px;
+  }
+  section.safe .safe-body {margin-bottom: 24px;}
+}

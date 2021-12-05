@@ -1,0 +1,120 @@
+/* Color pallete */
+/* Button type */
+/* Link type */
+/* Typo */
+.box-offer-3 {
+  margin: 0 228px;
+}
+@media (max-width: 1463px) {
+  .box-offer-3 {
+    margin: 0 16px;
+  }
+}
+@media (max-width: 425px) {
+  .box-offer-3 {
+    margin: 0 5px;
+  }
+}
+.box-offer-3 .offer-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 148px;
+  border-bottom: 1px solid #444444;
+}
+@media (max-width: 1463px) {
+  .box-offer-3 .offer-1 {
+    padding: 48px 142px;
+  }
+}
+@media (max-width: 1023px) {
+  .box-offer-3 .offer-1 {
+    padding: 32px 17px;
+  }
+}
+@media (max-width: 425px) {
+  .box-offer-3 .offer-1 {
+    padding: 32px 5px;
+  }
+}
+.box-offer-3 .offer-1 .left {
+  width: 90%;
+}
+.box-offer-3 .offer-1 .left .title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #332925;
+}
+@media (max-width: 1024px) {
+  .box-offer-3 .offer-1 .left .title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .box-offer-3 .offer-1 .left .title {
+    font-size: 13px;
+  }
+}
+.box-offer-3 .offer-1 .left .content {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+}
+@media (max-width: 1024px) {
+  .box-offer-3 .offer-1 .left .content {
+    font-size: 13px;
+  }
+}
+@media (max-width: 425px) {
+  .box-offer-3 .offer-1 .left .content {
+    font-size: 10px;
+  }
+}
+.box-offer-3 .offer-1 .right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 1024px) {
+  .box-offer-3 .offer-1 .right {
+    width: 10%;
+  }
+}
+.box-offer-3 .offer-1 .right .btn-view {
+  width: fit-content;
+}
+.box-offer-3 .offer-1 .right .btn-view .button {
+  padding: 16px 48px;
+  background: #333333;
+  color: #f2f1f1;
+  border: 2px solid #333333;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.box-offer-3 .offer-1 .right .btn-view .button:hover {
+  background: #cac5c6;
+  color: #332925;
+}
+@media (max-width: 1024px) {
+  .box-offer-3 .offer-1 .right .btn-view .button {
+    display: none;
+  }
+}
+.box-offer-3 .offer-1 .right .btn-view .icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1024px) {
+  .box-offer-3 .offer-1 .right .btn-view .icon {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=box-offer-3.css.map */

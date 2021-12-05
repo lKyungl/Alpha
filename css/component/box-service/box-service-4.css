@@ -1,0 +1,94 @@
+/* Color pallete */
+/* Button type */
+/* Link type */
+/* Typo */
+.box-service-4 .box-img {
+  margin-right: 60px;
+}
+.box-service-4 .box-img img {
+  width: 100%;
+}
+.box-service-4 .box-content {
+  margin-top: 80px;
+}
+.box-service-4 .box-content .name {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.box-service-4 .box-content .job {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.box-service-4 .box-content .line {
+  width: 132px;
+  height: 1px;
+  background: #8a8787;
+  margin-bottom: 40px;
+}
+.box-service-4 .box-content .maxim {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.box-service-4 .box-content .introduce {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.box-service-4.box-revert {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.box-service-4.box-revert .box-img {
+  margin-right: 0;
+}
+.box-service-4.box-revert .box-content {
+  margin-right: 60px;
+}
+@media (max-width: 1024px) {
+  .box-service-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-service-4 .box-img {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin: 0;
+  }
+  .box-service-4 .box-content {
+    padding: 40px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .box-service-4.box-revert .box-content {
+    margin: 0;
+  }
+}
+.box-service-4 .row-revice {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*# sourceMappingURL=box-service-4.css.map */

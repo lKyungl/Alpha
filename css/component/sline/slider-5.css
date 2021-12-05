@@ -1,0 +1,48 @@
+.slider-5 .slide {
+  position: relative;
+}
+.slider-5 .slide .prev {
+  background: none;
+  border: none;
+  position: absolute;
+  z-index: 99;
+  top: 42%;
+  left: 15%;
+}
+.slider-5 .slide .next {
+  background: none;
+  border: none;
+  position: absolute;
+  z-index: 99;
+  top: 42%;
+  right: 15%;
+}
+.slider-5 .slide .slider .slick-slide {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.slider-5 .slide .slider .slick-slide .overlay {
+  width: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease;
+}
+.slider-5 .slide .slider .slick-center .overlay {
+  background: none;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1024px) {
+  .slider-5 button.prev,
+.slider-5 button.next {
+    display: none;
+  }
+  .slider-5 .overlay {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=slider-5.css.map */
